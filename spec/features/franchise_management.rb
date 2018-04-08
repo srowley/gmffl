@@ -5,5 +5,7 @@ feature "Roster Management", type: :feature do
     visit "/"
     expect(page).to have_text("Franchise 0001")
     expect(page).to have_css("td", text: "10695")
+    expect(page).to have_css("td", text: "Active Roster")
+    expect(page).to have_css("td", text: "Taxi Squad")
   end
 end

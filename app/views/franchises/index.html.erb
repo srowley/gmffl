@@ -1,6 +1,6 @@
 <% provide(:danger_class, "class=\"text-center danger\"".html_safe) %>
 
-<% @franchises.each_with_index do |franchise, index| %>
+<% @franchises.each do |franchise| %>
   <table class="table table-condensed table-hover">
     <thead>
       <tr>
@@ -17,9 +17,12 @@
       </tr>
     </thead>
     <tbody>
-      <% franchise.players.each do |player| %>
-        <%= render partial: "player", locals: { player: player } %>
-      <% end %>
+      <tr colspan="7" class="text-nowrap"><td>Active Roster</td></tr>
+      <%= render partial: "player", collection: franchise.active_roster %>
+      <tr colspan="7" class="text-nowrap"><td>Taxi Squad</td></tr>
+      <%= render partial: "player", collection: franchise.taxi_squad %>
+      <tr colspan="7" class="text-nowrap"><td>Franchise Tag Eligible</td></tr>
+      <%= render partial: "player", collection: franchise.pending_franchise_tag %>
     </tbody>
   </table>
 <% end %>
