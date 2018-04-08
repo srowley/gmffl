@@ -1,0 +1,37 @@
+<% provide(:danger_class, "class=\"text-center danger\"".html_safe) %>
+
+<% @franchises.each_with_index do |franchise, index| %>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th colspan="7">Franchise <%= franchise.id %></th>
+      </tr>
+      <tr>
+        <th scope="col">Player</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Contract</th>
+        <th scope="col" class="text-center">Acquired Cost</th>
+        <th scope="col" class="text-center">Holdout Eligible?</th>
+        <th scope="col" class="text-center">Dead Cap</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% franchise.players.each do |player| %>
+        <tr>
+          <td><%= player.id %></td>
+          <td class="text-center"><%= player.salary %></td>
+          <td class="text-nowrap"><%= player.contract %></td>
+          <td class="text-center"><%= player.acquired_cost%></td>
+          <% if player.holdout_eligible? %>
+            <td <%= yield :danger_class %>>Yes</td>
+          <% else %>
+            <td class="text-center">No</td>
+          <% end %>
+          <td class="text-center"><%= player.dead_cap if player.notes.empty? %></td>
+          <td><small><%= player.notes%></small></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
