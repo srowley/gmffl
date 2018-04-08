@@ -18,19 +18,7 @@
     </thead>
     <tbody>
       <% franchise.players.each do |player| %>
-        <tr>
-          <td><%= player.id %></td>
-          <td class="text-center"><%= player.salary %></td>
-          <td class="text-nowrap"><%= player.contract %></td>
-          <td class="text-center"><%= player.acquired_cost%></td>
-          <% if player.holdout_eligible? %>
-            <td <%= yield :danger_class %>>Yes</td>
-          <% else %>
-            <td class="text-center">No</td>
-          <% end %>
-          <td class="text-center"><%= player.dead_cap if player.notes.empty? %></td>
-          <td><small><%= player.notes%></small></td>
-        </tr>
+        <%= render partial: "player", locals: { player: player } %>
       <% end %>
     </tbody>
   </table>
