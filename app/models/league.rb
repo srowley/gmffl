@@ -1,7 +1,7 @@
 class League
  include ActiveModel::Model
 
- attr_accessor :id, :roster_url, :franchises
+ attr_accessor :id, :roster_url, :franchises, :year
 
   def import_rosters
     @franchises = []
@@ -9,7 +9,7 @@ class League
     doc = Nokogiri::XML(doc)
     franchise_nodes = doc.xpath("//franchise")
     franchise_nodes.each do |f|
-      @franchises << Franchise.new(id: f["id"])
+      @franchises << Franchise.new(id: f["id"], league: self)
     end
 
     @franchises.each do |f|
@@ -21,7 +21,8 @@ class League
                                 roster_status: p["status"],
                                 acquired_cost: p["contractYear"].to_i,
                                 notes:         p["contractInfo"],
-                                salary:        p["salary"].to_i)
+                                salary:        p["salary"].to_i,
+                                franchise:     f)
       end
     end
   end

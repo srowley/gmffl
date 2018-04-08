@@ -1,6 +1,6 @@
 class Player
   include ActiveModel::Model
-  attr_accessor :id, :contract, :roster_status, :acquired_cost, :notes, :salary
+  attr_accessor :id, :contract, :roster_status, :acquired_cost, :notes, :salary, :franchise
 
   def dead_cap
     return 0 if @roster_status == "TAXI_SQUAD"
@@ -21,11 +21,11 @@ class Player
   end
 
   def holdout_eligible?
-     !(rookie_contract? || grandfathered_contract?) && contract_end > 2018
+     !(rookie_contract? || grandfathered_contract?) && contract_end > franchise.league.year
   end
 
   def contract_years_remaining
-    self.contract_end - 2018
+    contract_end - franchise.league.year
   end
 
   def contract_type

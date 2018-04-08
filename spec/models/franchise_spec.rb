@@ -5,10 +5,11 @@ describe Franchise do
   pending "#owner"
 
   before(:each) do
+    @league = League.new(year: 2018)
     @active_player = Player.new(id: 1, roster_status: "ROSTER")
     @ts_player = Player.new(id: 2, roster_status: "TAXI_SQUAD", contract: "2G-2018")
     @franchisable_player = Player.new(id: 3, roster_status: "TAXI_SQUAD", contract: "2G-2017")
-    @franchise = Franchise.new(players: [@active_player, @ts_player, @franchisable_player])
+    @franchise = Franchise.new(players: [@active_player, @ts_player, @franchisable_player], league: @league)
   end
 
   describe "#active_roster" do

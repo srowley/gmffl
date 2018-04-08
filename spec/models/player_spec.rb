@@ -1,10 +1,15 @@
 require 'rails_helper'
 
 describe Player do
+  before(:each) do
+    @league = League.new(year: 2018)
+    @franchise = Franchise.new(league: @league)
+    @player = Player.new(franchise: @franchise)
+  end
 
   context "will have finished his second contract year" do
     before(:each) do
-      @player = Player.new(contract: "3L-2019")
+      @player.contract = "3L-2019"
     end
 
     describe "#holdout_eligible?" do
@@ -16,7 +21,7 @@ describe Player do
 
   context "is a rookie" do
     before(:each) do
-      @player = Player.new(contract: "3L-2020R")
+      @player.contract = "3L-2020R"
     end
 
     describe "#holdout_eligible?" do
@@ -28,7 +33,7 @@ describe Player do
 
   context "on a grandfathered contract" do
     before(:each) do
-      @player = Player.new(contract: "3L-2019*")
+      @player.contract = "3L-2019*"
     end
 
     describe "#holdout_eligible?" do
@@ -40,7 +45,7 @@ describe Player do
 
   context "on a holdout-eligible contract" do
     before(:each) do
-      @player = Player.new(contract: "3L-2020")
+      @player.contract = "3L-2020"
     end
 
     describe "#holdout_eligible?" do
@@ -52,7 +57,7 @@ describe Player do
 
   context "is on the last year of their contract " do
     before(:each) do
-      @player = Player.new(contract: "1L-2018")
+      @player.contract = "1L-2018"
     end
 
     describe "#holdout_eligible?" do
@@ -65,9 +70,9 @@ describe Player do
   context "with a locked contract" do
 
     before(:each) do
-      @player = Player.new(contract: "5L-2021",
-                           acquired_cost: 34,
-                           salary: 34)
+      @player.contract = "5L-2021"
+      @player.acquired_cost = 34
+      @player.salary = 34
    end
 
     describe "#dead_cap" do
@@ -99,9 +104,9 @@ describe Player do
   context "with a guaranteed contract" do
 
     before(:each) do
-      @player = Player.new(contract: "5G-2021",
-                           salary: 34)
-   end
+      @player.contract = "5G-2021"
+      @player.salary =  34
+    end
 
     describe "#dead_cap" do
       it "calculates dead cap correctly" do
