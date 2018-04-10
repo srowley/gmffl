@@ -1,6 +1,6 @@
-<% provide(:danger_class, "class=\"text-center danger\"".html_safe) %>
-
-<% @franchises.each do |franchise| %>
+<% @franchises.each_with_index do |franchise, index| %>
+<%= "<div class=\"row\">".html_safe if index.odd? %>
+<div class="col-md-6">
   <table class="table table-condensed table-hover">
     <thead>
       <tr>
@@ -47,4 +47,6 @@
       </tr>
     </tbody>
   </table>
+</div>
+<%= "</div>".html_safe if index.odd? %>
 <% end %>
