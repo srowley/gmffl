@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class League
  include ActiveModel::Model
 
@@ -5,8 +7,7 @@ class League
 
   def import_rosters
     @franchises = []
-    doc = File.read(@roster_url)
-    doc = Nokogiri::XML(doc)
+    doc = Nokogiri::XML(open(roster_url))
     franchise_nodes = doc.xpath("//franchise")
     franchise_nodes.each do |f|
       @franchises << Franchise.new(id: f["id"], league: self)

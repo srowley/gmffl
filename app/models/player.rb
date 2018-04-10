@@ -36,6 +36,23 @@ class Player
     end
   end
 
+  def salary_schedule
+    schedule =  {}
+    schedule[franchise.league.year] = salary
+    if contract_type == "Guaranteed"
+      contract_years_remaining.times do |n|
+        year = franchise.league.year + n 
+        schedule[year + 1] = (schedule[year] * 1.05).ceil
+      end
+    else
+      contract_years_remaining.times do |n|
+        year = franchise.league.year + n 
+        schedule[year + 1] = salary 
+      end
+    end
+    schedule
+  end
+  
   def rookie_contract?
     @contract.include? "R"
   end

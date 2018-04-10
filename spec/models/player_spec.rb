@@ -73,7 +73,7 @@ describe Player do
       @player.contract = "5L-2021"
       @player.acquired_cost = 34
       @player.salary = 34
-   end
+    end
 
     describe "#dead_cap" do
       it "calculates dead cap correctly" do
@@ -87,16 +87,20 @@ describe Player do
     end
 
     describe "#contract_type" do
-
       it "parses correctly" do
         expect(@player.contract_type).to eq("Locked")
       end
     end
 
     describe "#contract_end" do
-
       it "parses correctly" do
         expect(@player.contract_end).to eq(2021)
+      end
+    end
+
+    describe "#salary_schedule" do
+      it "returns a hash of salaries for each contract year" do
+        expect(@player.salary_schedule).to include({ 2018 => 34, 2019 => 34, 2020 => 34, 2021 => 34 })
       end
     end
   end
@@ -120,16 +124,20 @@ describe Player do
     end
 
     describe "#contract_type" do
-
       it "parses correctly" do
         expect(@player.contract_type).to eq("Guaranteed")
       end
     end
 
     describe "#contract_end" do
-
       it "parses correctly" do
         expect(@player.contract_end).to eq(2021)
+      end
+    end
+   
+    describe "#salary_schedule" do
+      it "returns a hash of salaries for each contract year" do
+        expect(@player.salary_schedule).to include({ 2018 => 34, 2019 => 36, 2020 => 38, 2021 => 40 })
       end
     end
   end
