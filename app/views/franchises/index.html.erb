@@ -1,5 +1,5 @@
 <% @franchises.each_with_index do |franchise, index| %>
-<%= "<div class=\"row\">".html_safe if index.odd? %>
+<%= "<div class=\"row\">".html_safe if index.even? %>
 <div class="col-md-6">
   <table class="table table-condensed table-hover">
     <thead>
