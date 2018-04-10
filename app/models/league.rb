@@ -5,6 +5,12 @@ class League
 
  attr_accessor :id, :roster_url, :franchises, :year
 
+  def initialize(id = nil, year = nil)
+    self.id = id
+    self.year = year
+    self.roster_url = "http://www61.myfantasyleague.com/#{year}/export?TYPE=rosters&L=#{id}"
+  end
+
   def import_rosters
     @franchises = []
     doc = Nokogiri::XML(open(roster_url))

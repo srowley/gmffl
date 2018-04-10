@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Player do
   before(:each) do
-    @league = League.new(year: 2018)
+    @league = League.new(42618, 2018)
     @franchise = Franchise.new(league: @league)
     @player = Player.new(franchise: @franchise)
   end
