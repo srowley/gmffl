@@ -3,11 +3,7 @@
   <td class="text-center"><%= player.salary %></td>
   <td class="text-nowrap"><%= player.contract %></td>
   <td class="text-center"><%= player.acquired_cost%></td>
-  <% if player.holdout_eligible? %>
-  <td class="text-center">Yes</td>
-  <% else %>
-  <td class="text-center">No</td>
-  <% end %>
+  <td class="text-center"><%= player.holdout_eligible? ? "Yes" : "No" %></td>
   <td class="text-center"><%= player.dead_cap if player.notes.empty? %></td>
   <td><small><%= player.notes%></small></td>
 </tr>

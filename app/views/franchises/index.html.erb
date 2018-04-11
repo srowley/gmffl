@@ -2,10 +2,8 @@
 <%= "<div class=\"row\">".html_safe if index.even? %>
 <div class="col-md-6">
   <table class="table table-condensed table-hover">
+    <caption>Franchise <%= franchise.id %></caption>
     <thead>
-      <tr>
-        <th colspan="7"><h4>Franchise <%= franchise.id %></h4></th>
-      </tr>
       <tr>
         <th scope="col">Player</th>
         <th scope="col">Salary</th>
@@ -17,7 +15,6 @@
       </tr>
     </thead>
     <tbody>
-
       <tr colspan="7" class="text-nowrap"><td>Active Roster</td></tr>
       <%= render partial: "player", collection: franchise.active_roster %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :active_roster } %>
