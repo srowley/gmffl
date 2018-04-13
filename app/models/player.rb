@@ -20,6 +20,10 @@ class Player
     end
   end
 
+  def stats
+    Stat.where(player_id: id).first ? Stat.where(player_id: id).first : Stat.new
+  end
+
   def holdout_eligible?
      !(rookie_contract? || grandfathered_contract?) && contract_end > franchise.league.year
   end

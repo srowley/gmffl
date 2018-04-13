@@ -141,5 +141,17 @@ describe Player do
       end
     end
   end
+  
+  describe "#stats" do
+    before(:each) do
+     @player.id = 1
+     @stat = Stat.create(player_id: 1, score: 50, position: "WR", rank: 3)
+    end
+    
+    it "returns the score and rank for a given player" do
+      expect(@player.stats.rank).to eq(3)
+      expect(@player.stats.position).to eq("WR") 
+    end
+  end
 end
 
