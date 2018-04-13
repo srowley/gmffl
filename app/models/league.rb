@@ -36,5 +36,11 @@ class League
   end
   
   def import_players
+    Player.delete_all
+    doc = Nokogiri::XML(open(players_url))
+    player_nodes = doc.xpath("//player")
+    player_nodes.each do |p| 
+      Player.create(player_id: p["id"], name: p["name"]) if ["QB", "RB", "WR", "TE"].include? p["position"]
+    end
   end
 end

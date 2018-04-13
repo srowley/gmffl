@@ -1,5 +1,5 @@
 <tr>
-  <td data-toggle="popover" title="2017 Performance" data-trigger="hover" data-content=<%= "\"#{contract.stats.score} points (#{contract.stats.position}#{contract.stats.rank})\"".html_safe %>><%= contract.player_id %></td>
+  <td data-toggle="popover" title="2017 Performance" data-trigger="hover" data-content=<%= "\"#{contract.stats.score} points (#{contract.stats.position}#{contract.stats.rank})\"".html_safe %>><%= contract.player.name %></td>
   <td class="text-center"><%= contract.salary %></td>
   <td class="text-nowrap"><%= contract.contract_terms %></td>
   <td class="text-center"><%= contract.acquired_cost%></td>

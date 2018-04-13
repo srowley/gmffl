@@ -20,6 +20,10 @@ class Contract
     end
   end
 
+  def player
+    Player.find(player_id)
+  end
+
   def stats
     Stat.where(player_id: player_id).first ? Stat.where(player_id: player_id).first : Stat.new
   end
