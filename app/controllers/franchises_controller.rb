@@ -5,7 +5,7 @@ class FranchisesController < ApplicationController
     year = params[:year].to_i
 #    league = League.new(roster_url: "http://www61.myfantasyleague.com/#{year}/export?TYPE=rosters&L=#{league_id}", year: year.to_i)
     league = League.new(league_id, year)
-    league.import_rosters
+    league.import_contracts
     @franchises = league.franchises
   end
 end

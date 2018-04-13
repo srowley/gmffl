@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180412222739) do
+ActiveRecord::Schema.define(version: 20180413022430) do
+
+  create_table "players", id: false, force: :cascade do |t|
+    t.integer "player_id", null: false
+    t.string "name"
+    t.string "team"
+    t.index ["player_id"], name: "index_players_on_player_id", unique: true
+  end
 
   create_table "stats", force: :cascade do |t|
     t.integer "score"

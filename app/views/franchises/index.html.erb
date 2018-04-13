@@ -21,18 +21,18 @@ $(function () {
     </thead>
     <tbody>
       <tr colspan="7" class="text-nowrap"><td>Active Roster</td></tr>
-      <%= render partial: "player", collection: franchise.active_roster %>
+      <%= render partial: "contract", collection: franchise.active_roster %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :active_roster } %>
 
       <% if franchise.taxi_squad.present? %>
       <tr colspan="7" class="text-nowrap"><td>Taxi Squad</td></tr>
-      <%= render partial: "player", collection: franchise.taxi_squad %>
+      <%= render partial: "contract", collection: franchise.taxi_squad %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :taxi_squad} %>
       <% end %>
 
       <% if franchise.pending_franchise_tag.present? %>
       <tr colspan="7" class="text-nowrap"><td>Franchise Tag Eligible</td></tr>
-      <%= render partial: "player", collection: franchise.pending_franchise_tag %>
+      <%= render partial: "contract", collection: franchise.pending_franchise_tag %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :pending_franchise_tag } %>
       <% end %>
 

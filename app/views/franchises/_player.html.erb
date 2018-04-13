@@ -1,9 +1,0 @@
-<tr>
-  <td data-toggle="popover" title="2017 Performance" data-trigger="hover" data-content=<%= "\"#{player.stats.score} points (#{player.stats.position}#{player.stats.rank})\"".html_safe %>><%= player.id %></td>
-  <td class="text-center"><%= player.salary %></td>
-  <td class="text-nowrap"><%= player.contract %></td>
-  <td class="text-center"><%= player.acquired_cost%></td>
-  <td class="text-center"><%= player.holdout_eligible? ? "Yes" : "No" %></td>
-  <td class="text-center"><%= player.dead_cap if player.notes.empty? %></td>
-  <td><small><%= player.notes%></small></td>
-</tr>
