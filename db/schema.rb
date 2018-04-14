@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180414023336) do
+ActiveRecord::Schema.define(version: 20180414025505) do
+
+  create_table "franchises", id: false, force: :cascade do |t|
+    t.string "franchise_id", null: false
+    t.string "name"
+    t.index ["franchise_id"], name: "index_franchises_on_franchise_id", unique: true
+  end
 
   create_table "players", id: false, force: :cascade do |t|
     t.integer "player_id", null: false

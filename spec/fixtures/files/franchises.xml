@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<league id="42618" name="GMFFL" rosterSize="22" injuredReserve="2" taxiSquad="18" rostersPerPlayer="1" playerLimitUnit="LEAGUE" startWeek="1" endWeek="17" lastRegularSeasonWeek="13" precision="0" h2h="YES" currentWaiverType="BBID" maxWaiverRounds="8" lockout="No" usesContractYear="1" minKeepers="0" auctionStartAmount="300" bbidConditional="Yes" draftPlayerPool="Both" standingsSort="PCT,PTS,ALL_PLAY_PCT," salaryCapAmount="300" minBid="1" bbidSeasonLimit="100000" usesSalaries="1" maxKeepers="17" draftLimitHours="0:00" includeIRWithSalary="100" bidIncrement="1" includeTaxiWithSalary="100" baseURL="http://www61.myfantasyleague.com" bestLineup="Yes" loadRosters="live_auction">
+  <starters count="7-9" idp_starters="">
+    <position name="QB" limit="1-2" />
+    <position name="RB" limit="2-4" />
+    <position name="WR" limit="3-5" />
+    <position name="TE" limit="1-3" />
+  </starters>
+  <divisions count="4">
+    <division id="00" name="The Winners" />
+    <division id="01" name="At Least We Made the Playoffs" />
+    <division id="02" name="Toilet Bowl Betters" />
+    <division id="03" name="The Losers" />
+  </divisions>
+  <franchises count="12">
+    <franchise icon="http://b.vimeocdn.com/ts/330/230/330230709_640.jpg" division="00" waiverSortOrder="11" bbidAvailableBalance="82.00" salaryCapAmount="" id="0001" name="Moonshiners" logo="http://b.vimeocdn.com/ts/330/230/330230709_640.jpg" />
+    <franchise icon="http://cdn-static.denofgeek.com/sites/denofgeek/files/2017/05/over_the_top_main.jpg" division="01" waiverSortOrder="1" email="srowley@gmail.com" bbidAvailableBalance="52.00" salaryCapAmount="" id="0002" play_audio="Yes" owner_name="Steve Rowley" mail_event="TRADE,TBAIT,WAIVER,POLL,MSG_BOARD,ARTICLE," country="US" name="Belichick Whisperer" mail_type="html" username="srowley" logo="https://pbs.twimg.com/media/DJ7s3URVwAAhJCy.jpg" time_zone="CT" use_advanced_editor="Yes" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2016/42618_franchise_icon0003.gif" division="03" waiverSortOrder="12" bbidAvailableBalance="10.00" salaryCapAmount="" id="0003" stadium="The Cloud" abbrev="DEW" name="Honey Dew Donuts" logo="http://www61.myfantasyleague.com/fflnetdynamic2016/42618_franchise_logo0003.gif" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2018/42618_franchise_icon0004.jpg" division="02" waiverSortOrder="10" bbidAvailableBalance="100.00" salaryCapAmount="" id="0004" sound="http://www.hark.com/clips/vvvcxtytkl-what-the-hell-is-going-on-out-here" abbrev="SWS" name="DOWNTOWN FOX" logo="http://www61.myfantasyleague.com/fflnetdynamic2018/42618_franchise_logo0004.jpg" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2015/40994_franchise_icon0005.jpg" division="00" waiverSortOrder="8" bbidAvailableBalance="99.00" salaryCapAmount="" id="0005" sound="http://www.roundersmovie.com/sounds/pay_him.wav" abbrev="PBRW" name="Play Bad, Run Well" logo="http://www61.myfantasyleague.com/fflnetdynamic2015/40994_franchise_logo0005.jpg" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2017/42618_franchise_icon0006.jpg" division="03" waiverSortOrder="2" bbidAvailableBalance="87.00" salaryCapAmount="" id="0006" name="GARBAGEPLATES" logo="http://www61.myfantasyleague.com/fflnetdynamic2017/42618_franchise_logo0006.jpg" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnet2012/newhelmets/nh-0046.png" division="00" waiverSortOrder="6" bbidAvailableBalance="53.00" salaryCapAmount="" id="0007" abbrev="MUSE" name="Dead Muses" logo="http://www57.myfantasyleague.com/fflnetdynamic2013/32096_franchise_logo0007.jpg" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnet2017/newhelmets/nh-0095.png" division="01" waiverSortOrder="7" bbidAvailableBalance="23.00" salaryCapAmount="" id="0008" stadium="Cheetos Dome" sound="http://www57.myfantasyleague.com/fflnetdynamic2013/32096_franchise_sound0008.wav" abbrev="CD" name="Clueless in DC" logo="http://www61.myfantasyleague.com/fflnet2017/newlogos/player2.png" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2017/42618_franchise_icon0009.png" division="01" waiverSortOrder="9" bbidAvailableBalance="121.00" salaryCapAmount="" id="0009" name="No Idea" logo="http://www61.myfantasyleague.com/fflnetdynamic2017/42618_franchise_logo0009.png" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2015/40994_franchise_icon0010.jpg" division="02" waiverSortOrder="3" bbidAvailableBalance="35.00" salaryCapAmount="" id="0010" stadium="Meth Life Stadium" abbrev="BrCh" name="Breaking Chad" logo="http://www61.myfantasyleague.com/fflnetdynamic2016/42618_franchise_logo0010.jpg" />
+    <franchise icon="http://www61.myfantasyleague.com/fflnetdynamic2015/40994_franchise_icon0011.jpg" division="02" waiverSortOrder="5" bbidAvailableBalance="28.00" salaryCapAmount="" id="0011" name="Eric" logo="http://www61.myfantasyleague.com/fflnetdynamic2015/40994_franchise_logo0011.jpg" />
+    <franchise division="03" waiverSortOrder="4" bbidAvailableBalance="84.00" salaryCapAmount="" id="0012" name="Thunder Bros" />
+  </franchises>
+  <history>
+    <league year="2018" url="http://www61.myfantasyleague.com/2018/home/42618" />
+    <league year="2011" url="http://games.espn.go.com/ffl/leagueoffice?leagueId=115914&amp;teamId=1&amp;seasonId=2011" />
+    <league year="2012" url="http://games.espn.go.com/ffl/leagueoffice?leagueId=115914&amp;teamId=1&amp;seasonId=2012" />
+    <league year="2013" url="http://www57.myfantasyleague.com/2013/home/32096" />
+    <league year="2014" url="http://www61.myfantasyleague.com/2014/home/14691" />
+    <league year="2015" url="http://www61.myfantasyleague.com/2015/home/40994" />
+    <league year="2016" url="http://www61.myfantasyleague.com/2016/home/42618" />
+    <league year="2017" url="http://www61.myfantasyleague.com/2017/home/42618" />
+  </history>
+</league>

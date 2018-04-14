@@ -1,17 +1,19 @@
-class Franchise
-  include ActiveModel::Model
-  attr_accessor :id, :contracts, :league
+class Franchise < ApplicationRecord
+
+  self.primary_key = "franchise_id"
+
+  attr_accessor :contracts, :league
 
   def active_roster
-    @contracts.select{ |p| p.roster_status == "ROSTER" }
+    contracts.select{ |p| p.roster_status == "ROSTER" }
   end
 
   def taxi_squad 
-    @contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end != (league.year - 1) }
+    contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end != (league.year - 1) }
   end
 
   def pending_franchise_tag 
-    @contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end == league.year - 1}
+    contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end == league.year - 1}
   end
 
   def salary(roster = nil )

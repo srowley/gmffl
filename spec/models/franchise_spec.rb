@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 describe Franchise do
-  pending "#name"
-  pending "#owner"
 
   before(:each) do
     @league = League.new(42618, 2018)
