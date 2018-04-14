@@ -1,4 +1,3 @@
-<tr>
   <td data-toggle="popover" title="2017 Performance" data-trigger="hover" data-content=<%= "\"#{contract.stats.score} points (#{contract.stats.position}#{contract.stats.rank})\"".html_safe %>><%= contract.player.name %></td>
   <td class="text-center"><%= contract.salary %></td>
   <td class="text-nowrap"><%= contract.contract_terms %></td>
@@ -6,4 +5,3 @@
   <td class="text-center"><%= contract.holdout_eligible? ? "Yes" : "No" %></td>
   <td class="text-center"><%= contract.dead_cap if contract.notes.empty? %></td>
   <td><small><%= contract.notes%></small></td>
-</tr>

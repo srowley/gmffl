@@ -9,6 +9,9 @@ describe Franchise do
     @franchisable_contract = Contract.new(player_id: 3, roster_status: "TAXI_SQUAD", contract_terms: "2G-2017")
     @franchise = Franchise.new(contracts: [@active_contract, @ts_contract, @franchisable_contract], league: @league)
     @franchise.adjustments = []
+    @player1 = Player.create(player_id: 1)
+    @player2 = Player.create(player_id: 2)
+    @player3 = Player.create(player_id: 3) 
   end
 
   describe "#active_roster" do

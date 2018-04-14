@@ -7,7 +7,7 @@ $(function () {
 <%= "<div class=\"row\">".html_safe if index.even? %>
 <div class="col-md-6">
   <table class="table table-condensed table-hover">
-    <caption><%= franchise.name %></caption>
+    <caption><h3><%= franchise.name %></h3></caption>
     <thead class="thead-dark">
       <tr>
         <th scope="col">Player</th>
@@ -21,28 +21,47 @@ $(function () {
     </thead>
     <tbody>
       <tr class="active text-nowrap"><td colspan="7"><strong>Active Roster</strong></td></tr>
-      <%= render partial: "contract", collection: franchise.active_roster %>
+      <% ["QB","RB","WR","TE"].each do |position| %>
+
+        <% franchise.active_roster(position).each_with_index do |c, index | %>
+          <% if index != 0 %>
+          <tr>
+          <% else %>
+          <tr class="position-border">
+          <% end %>
+          <%= render partial: "contract", locals: { contract: c }%>
+          </tr>
+        <% end %>
+      <% end %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :active_roster } %>
 
       <% if franchise.taxi_squad.present? %>
-      <tr class="position-border active text-nowrap"><td colspan="7"><strong>Taxi Squad</strong></td></tr>
-      <%= render partial: "contract", collection: franchise.taxi_squad %>
+        <tr class="section-border active text-nowrap"><td colspan="7"><strong>Taxi Squad</strong></td></tr>
+        <% ["QB","RB","WR","TE"].each do |position| %>
+          <% franchise.taxi_squad(position).each_with_index do |c, index | %>
+            <tr><%= render partial: "contract", locals: { contract: c }%></tr>
+          <% end %>
+        <% end %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :taxi_squad} %>
       <% end %>
 
       <% if franchise.pending_franchise_tag.present? %>
-      <tr class="position-border active text-nowrap"><td colspan="7"><strong>Franchise Tag Eligible</strong></td></tr>
-      <%= render partial: "contract", collection: franchise.pending_franchise_tag %>
+        <tr class="section-border active text-nowrap"><td colspan="7"><strong>Franchise Tag Eligible</strong></td></tr>
+        <% ["QB","RB","WR","TE"].each do |position| %>
+          <% franchise.pending_franchise_tag(position).each_with_index do |c, index | %>
+            <tr><%= render partial: "contract", locals: { contract: c }%></tr>
+          <% end %>
+        <% end %>
       <%= render partial: "salary_total", locals: { franchise: franchise, roster: :pending_franchise_tag } %>
       <% end %>
 
-      <tr class="position-border active">
+      <tr class="section-border active">
         <td class="text-nowrap"><strong>Dead Cap Space</strong></td>
         <td class="text-center"><%= link_to franchise.total_adjustments, "http://www61.myfantasyleague.com/#{franchise.league.year}/options?L=42618&O=142&F=#{franchise.id}"%></td>
         <td colspan="6"> </td>
       </tr>
 
-      <tr class="position-border info">
+      <tr class="section-border info">
         <td class="text-nowrap"><strong>Cap Room Available</strong></td>
         <td class="text-center"><%= 300 - franchise.salary - franchise.total_adjustments %></td>
         <td colspan="6"> </td>

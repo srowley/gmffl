@@ -4,20 +4,26 @@ class Franchise < ApplicationRecord
 
   attr_accessor :contracts, :league, :adjustments
 
-  def active_roster
-    contracts.select{ |p| p.roster_status == "ROSTER" }
+  def active_roster(position = nil)
+    all = contracts.select{ |p| p.roster_status == "ROSTER" }
+    all = all.sort_by { |c| c.player.name }
+    !position ? all : all.select{|c| c.player.position == position }
   end
 
-  def taxi_squad 
-    contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end != (league.year - 1) }
+  def taxi_squad(position = nil)
+    all = contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end != (league.year - 1) }
+    all = all.sort_by { |c| c.player.name }
+    !position ? all : all.select{|c| c.player.position == position }
   end
 
-  def pending_franchise_tag 
-    contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end == league.year - 1}
+  def pending_franchise_tag(position = nil) 
+    all = contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end == league.year - 1}
+    all = all.sort_by { |c| c.player.name }
+    !position ? all : all.select{|c| c.player.position == position }
   end
 
-  def salary(roster = nil )
-    selected_contracts = roster ? self.send(roster) : self.contracts
+  def salary(roster = nil, position = nil )
+    selected_contracts = roster ? self.send(roster, position) : self.contracts
     salaries = selected_contracts.map { |p| p.salary }
     salaries.inject(:+) 
   end
