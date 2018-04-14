@@ -1,6 +1,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+/* variables */
+
+$gray-900:                    #212529;
+$black:                       #000;
+
+
+$table-border-color:          $black;
+$table-dark-color:            $body-bg;
+$table-dark-bg:               $gray-900;
+$table-dark-border-color:     lighten($gray-900, 7.5%);
+
+.table {
+  .thead-dark {
+    th {
+      color: $table-dark-color;
+      background-color: $table-dark-bg;
+      border-color: $table-dark-border-color;
+    }
+  }
+  .position-border {
+    border-color: $table-border-color;
+    border-top: 3px solid $black;
+  }
+}
+
 /* universal */
 
 body {
