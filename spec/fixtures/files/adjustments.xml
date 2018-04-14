@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<salaryAdjustments>
+  <salaryAdjustment id="0" franchise_id="0001" amount="2.00" description="kept of wright's salary after trade" timestamp="1373254913" />
+  <salaryAdjustment id="1" franchise_id="0001" amount="4.00" description="Drop Foles, Powell, Benn, Meachem before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="10" franchise_id="0001" amount="6.00" description="Dropped J White in-season" timestamp="1411915320" />
+  <salaryAdjustment id="100" franchise_id="0003" amount="16.00" description="Dropped Kaepernick in-season when on IR" timestamp="1448805689" />
+  <salaryAdjustment id="101" franchise_id="0003" amount="4.00" description="Dropped Gore after Trade Deadline; $4 DCH also for 2016" timestamp="1449031431" />
+  <salaryAdjustment id="102" franchise_id="0003" amount="-64.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="103" franchise_id="0003" amount="4.00" description="2015: dropped Gore after trade deadline" timestamp="1451514362" />
+  <salaryAdjustment id="104" franchise_id="0003" amount="20.00" description="Kept of E. Manning in trade" timestamp="1472097007" />
+  <salaryAdjustment id="105" franchise_id="0003" amount="2.00" description="Dropped V. Jackson off-season" timestamp="1472234340" />
+  <salaryAdjustment id="106" franchise_id="0003" amount="1.00" description="Dropped McFadden in-season" timestamp="1472837787" />
+  <salaryAdjustment id="107" franchise_id="0003" amount="2.00" description="Dropped Spiller in-season" timestamp="1474528050" />
+  <salaryAdjustment id="108" franchise_id="0003" amount="1.00" description="Dropped R. Bush in-season" timestamp="1474919742" />
+  <salaryAdjustment id="109" franchise_id="0003" amount="6.00" description="Kept of Ingram in trade" timestamp="1476538948" />
+  <salaryAdjustment id="11" franchise_id="0001" amount="2.00" description="Dropped K Robinson in-season" timestamp="1412952440" />
+  <salaryAdjustment id="110" franchise_id="0003" amount="28.00" description="Dropped Decker in-season" timestamp="1476971841" />
+  <salaryAdjustment id="111" franchise_id="0003" amount="7.00" description="Dropped Hoyer in-season" timestamp="1477581846" />
+  <salaryAdjustment id="112" franchise_id="0003" amount="1.00" description="Dropped Ch. Johnson in-season" timestamp="1479051189" />
+  <salaryAdjustment id="113" franchise_id="0003" amount="1.00" description="Dropped B Butler in-season" timestamp="1479397840" />
+  <salaryAdjustment id="114" franchise_id="0003" amount="1.00" description="Dropped Mallett in-season" timestamp="1480096952" />
+  <salaryAdjustment id="115" franchise_id="0003" amount="1.00" description="Dropped Chris Johnson in-season" timestamp="1480620817" />
+  <salaryAdjustment id="116" franchise_id="0003" amount="-75.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="117" franchise_id="0004" amount="7.00" description="Drop Pead, Baldwin before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="118" franchise_id="0004" amount="1.00" description="Dropped L. Wilson in-season ($1 Guar)" timestamp="1379741404" />
+  <salaryAdjustment id="119" franchise_id="0004" amount="12.00" description="Dropped D. Wilson in-season ($12L but on IR)" timestamp="1384397657" />
+  <salaryAdjustment id="12" franchise_id="0001" amount="1.00" description="Dropped R Bush on Saturday after acquiring him on Wednesday" timestamp="1416748258" />
+  <salaryAdjustment id="120" franchise_id="0004" amount="-20.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="121" franchise_id="0004" amount="4.00" description="Dropped Blackmon pre-Auction" timestamp="1408421652" />
+  <salaryAdjustment id="122" franchise_id="0004" amount="2.00" description="Dropped Boykin in-season" timestamp="1411877163" />
+  <salaryAdjustment id="123" franchise_id="0004" amount="6.00" description="Dropped Dunbar ($2, 6L-2018) in-season" timestamp="1414939862" />
+  <salaryAdjustment id="124" franchise_id="0004" amount="1.00" description="Dropped Ridley ($1L) in-season; on IR" timestamp="1415891192" />
+  <salaryAdjustment id="125" franchise_id="0004" amount="-13.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="126" franchise_id="0004" amount="2.00" description="Dropped Jones off-season" timestamp="1433341258" />
+  <salaryAdjustment id="127" franchise_id="0004" amount="-2.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="128" franchise_id="0004" amount="44.00" description="Dropped Morris, Ferguson, Harvin, Wallace off-season" timestamp="1472234340" />
+  <salaryAdjustment id="129" franchise_id="0004" amount="1.00" description="Dropped Wilds in-season" timestamp="1473260202" />
+  <salaryAdjustment id="13" franchise_id="0001" amount="1.00" description="C. Clay dropped on Sat after won on Wed" timestamp="1418559836" />
+  <salaryAdjustment id="130" franchise_id="0004" amount="1.00" description="Dropped T Hill in-season" timestamp="1473349655" />
+  <salaryAdjustment id="131" franchise_id="0004" amount="1.00" description="Dropped A Ellington in-season" timestamp="1473354655" />
+  <salaryAdjustment id="132" franchise_id="0004" amount="1.00" description="Dropped Sanchez in-season" timestamp="1473366651" />
+  <salaryAdjustment id="133" franchise_id="0004" amount="8.00" description="Dropped L Jones in-season" timestamp="1474103014" />
+  <salaryAdjustment id="134" franchise_id="0004" amount="4.00" description="Dropped Abbrederis in-season" timestamp="1474528050" />
+  <salaryAdjustment id="135" franchise_id="0004" amount="3.00" description="Dropped R. Anderson in-season" timestamp="1479423192" />
+  <salaryAdjustment id="136" franchise_id="0004" amount="-63.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="137" franchise_id="0005" amount="8.00" description="5L-3&#9;Mario Manningham, SF WR&#9;$15&#9;$17&#9;2011: $10 advanced&#9;salary = 15 / remaining year; dropped off-season 2013" timestamp="1368503152" />
+  <salaryAdjustment id="138" franchise_id="0005" amount="1.00" description="Drop Escobar before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="139" franchise_id="0005" amount="8.00" description="dropped in-season ballard ($5, paying forward Locked contract), sudfeld ($2 ($3 guar contract)), $1 allen ($2 guar)" timestamp="1379528929" />
+  <salaryAdjustment id="14" franchise_id="0001" amount="2.00" description="Dalton ($7, G) dropped after trade Deadline.  2015:  $2 dead ca[p hit" timestamp="1418559868" />
+  <salaryAdjustment id="140" franchise_id="0005" amount="5.00" description="kept 4 of james and 1 of floyd in trade" timestamp="1381402693" />
+  <salaryAdjustment id="141" franchise_id="0005" amount="4.00" description="in-season, dropped heyward-bey ($7G)" timestamp="1381402751" />
+  <salaryAdjustment id="142" franchise_id="0005" amount="-26.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="143" franchise_id="0005" amount="1.00" description="kept of kelce after trade" timestamp="1405948099" />
+  <salaryAdjustment id="144" franchise_id="0005" amount="1.00" description="Dropped Vick in-season" timestamp="1410439080" />
+  <salaryAdjustment id="145" franchise_id="0005" amount="10.00" description="Dropped Amendola in-season" timestamp="1412616163" />
+  <salaryAdjustment id="146" franchise_id="0005" amount="16.00" description="Dropped Stacy, T West, Wheaton, Cameron, G Graham in season" timestamp="1415858329" />
+  <salaryAdjustment id="147" franchise_id="0005" amount="-28.00" description="End of 2014 Season" timestamp="1419441696" />
+  <salaryAdjustment id="148" franchise_id="0005" amount="1.00" description="Kept by Michael of Ebron in trade" timestamp="1440100229" />
+  <salaryAdjustment id="149" franchise_id="0005" amount="3.00" description="Dropped Cobb in-season" timestamp="1443724975" />
+  <salaryAdjustment id="15" franchise_id="0001" amount="13.00" description="Dropped Dalton and J Randle on Saturday after acquiring them on Wed" timestamp="1419178728" />
+  <salaryAdjustment id="150" franchise_id="0005" amount="37.00" description="Dropped Ball (24), Mason (5), and Patterson (8) in-season" timestamp="1443975109" />
+  <salaryAdjustment id="151" franchise_id="0005" amount="17.00" description="Dropped Charles in-season" timestamp="1444919160" />
+  <salaryAdjustment id="152" franchise_id="0005" amount="1.00" description="Dropped Britt in-season" timestamp="1445365458" />
+  <salaryAdjustment id="153" franchise_id="0005" amount="13.00" description="Dropped Walford in-season" timestamp="1445540630" />
+  <salaryAdjustment id="154" franchise_id="0005" amount="17.00" description="Dropped Sankey in-season" timestamp="1447998882" />
+  <salaryAdjustment id="155" franchise_id="0005" amount="-89.00" description="end of year" timestamp="1451514205" />
+  <salaryAdjustment id="156" franchise_id="0005" amount="3.00" description="Dropped B. Ellington in-season" timestamp="1472839342" />
+  <salaryAdjustment id="157" franchise_id="0005" amount="4.00" description="Dropped Draughn, Higbee, Ja Brown, Hardy in-season" timestamp="1477456863" />
+  <salaryAdjustment id="158" franchise_id="0005" amount="-7.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="159" franchise_id="0006" amount="4.00" description="3G-3&#9;Christian Ponder, Min QB&#9;$16&#9;$16&#9;Dropped after Deadline" timestamp="1368505465" />
+  <salaryAdjustment id="16" franchise_id="0001" amount="-44.00" description="End of 2014 Season" timestamp="1419441696" />
+  <salaryAdjustment id="160" franchise_id="0006" amount="1.00" description="1G-0&#9;Michael Bush, Chi RB&#9;$4&#9;$4&#9;Dropped after Deadline" timestamp="1368505488" />
+  <salaryAdjustment id="161" franchise_id="0006" amount="14.00" description="Dropped Maclin before auction; $24 Guar ($14 base, two deferrals in 2012 of $4 each = $10 cap hit ($4 + $1 deferral penalty x 2))" timestamp="1375934628" />
+  <salaryAdjustment id="162" franchise_id="0006" amount="3.00" description="Dropped Mike Williams in-season; Locked but on IR" timestamp="1383493322" />
+  <salaryAdjustment id="163" franchise_id="0006" amount="6.00" description="Kept of Stafford after trade" timestamp="1384283775" />
+  <salaryAdjustment id="164" franchise_id="0006" amount="-28.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="165" franchise_id="0006" amount="1.00" description="kept as part of mason's salary in trade" timestamp="1402281703" />
+  <salaryAdjustment id="166" franchise_id="0006" amount="2.00" description="Kept of Richardson's salary in trade" timestamp="1403099751" />
+  <salaryAdjustment id="167" franchise_id="0006" amount="3.00" description="kept of bradford in trade" timestamp="1403752163" />
+  <salaryAdjustment id="168" franchise_id="0006" amount="3.00" description="Dropped Helu and Britt pre-Auction" timestamp="1408421652" />
+  <salaryAdjustment id="169" franchise_id="0006" amount="1.00" description="Dropped Britt in-season" timestamp="1410094361" />
+  <salaryAdjustment id="17" franchise_id="0001" amount="2.00" description="2014 Player (Dalton, $7G) dropped after deadline" timestamp="1419441906" />
+  <salaryAdjustment id="170" franchise_id="0006" amount="4.00" description="Dropped Pitta in-season" timestamp="1411877163" />
+  <salaryAdjustment id="171" franchise_id="0006" amount="2.00" description="Dropped Palmer ($2L) in-season" timestamp="1415807253" />
+  <salaryAdjustment id="172" franchise_id="0006" amount="8.00" description="Kept of C. Johnson in trade" timestamp="1415855127" />
+  <salaryAdjustment id="173" franchise_id="0006" amount="3.00" description="Drop Dobson ($3, L) in-season when put on IR" timestamp="1417786662" />
+  <salaryAdjustment id="174" franchise_id="0006" amount="-27.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="175" franchise_id="0006" amount="1.00" description="Dropped Locker in off-season" timestamp="1433382856" />
+  <salaryAdjustment id="176" franchise_id="0006" amount="4.00" description="Kept of White in trade" timestamp="1433514280" />
+  <salaryAdjustment id="177" franchise_id="0006" amount="2.00" description="Kept of White in trade" timestamp="1434124224" />
+  <salaryAdjustment id="178" franchise_id="0006" amount="1.00" description="B. Brown dropped in off-season" timestamp="1439611913" />
+  <salaryAdjustment id="179" franchise_id="0006" amount="14.00" description="Dropped J. Bell in-season" timestamp="1443975109" />
+  <salaryAdjustment id="18" franchise_id="0001" amount="5.00" description="kept of Ingram in trade" timestamp="1422408816" />
+  <salaryAdjustment id="180" franchise_id="0006" amount="2.00" description="Dropped Allen in-season" timestamp="1444306930" />
+  <salaryAdjustment id="181" franchise_id="0006" amount="2.00" description="Kept of Wright in trade" timestamp="1447996864" />
+  <salaryAdjustment id="182" franchise_id="0006" amount="1.00" description="Dropped White on Saturday after acquiring on Wednesday" timestamp="1449419817" />
+  <salaryAdjustment id="183" franchise_id="0006" amount="2.00" description="Dropped J Stewart" timestamp="1451209056" />
+  <salaryAdjustment id="184" franchise_id="0006" amount="-29.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="185" franchise_id="0006" amount="1.00" description="dropped Kroft in-season" timestamp="1473970635" />
+  <salaryAdjustment id="186" franchise_id="0006" amount="2.00" description="Dropped LaFell in-season" timestamp="1474418366" />
+  <salaryAdjustment id="187" franchise_id="0006" amount="2.00" description="Dropped Pitta in-season" timestamp="1479150226" />
+  <salaryAdjustment id="188" franchise_id="0006" amount="5.00" description="Dropped Forsett in-season" timestamp="1480096952" />
+  <salaryAdjustment id="189" franchise_id="0006" amount="11.00" description="Dropped Forsett in-season (was a G not an NG contract)" timestamp="1480103572" />
+  <salaryAdjustment id="19" franchise_id="0001" amount="6.00" description="Kept of Olsen in trade" timestamp="1439870631" />
+  <salaryAdjustment id="190" franchise_id="0006" amount="2.00" description="Dropped M Wilson in-season" timestamp="1482115677" />
+  <salaryAdjustment id="191" franchise_id="0006" amount="6.00" description="Dropped Hopkins in-season" timestamp="1482291920" />
+  <salaryAdjustment id="192" franchise_id="0006" amount="7.00" description="Dropped Riddick in-season" timestamp="1482734624" />
+  <salaryAdjustment id="193" franchise_id="0006" amount="-36.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="194" franchise_id="0006" amount="4.00" description="Kept of Watkins as part of prior trade" timestamp="1482898914" />
+  <salaryAdjustment id="195" franchise_id="0007" amount="6.00" description="Dropped Hernandez before auction; $12 Locked" timestamp="1375981479" />
+  <salaryAdjustment id="196" franchise_id="0007" amount="1.00" description="kept of pettigrew's contract after trade" timestamp="1379527263" />
+  <salaryAdjustment id="197" franchise_id="0007" amount="1.00" description="Drop F. Davis in-season ($1 Guar); " timestamp="1379741205" />
+  <salaryAdjustment id="198" franchise_id="0007" amount="1.00" description="Drop Stills, $2 Guar contract" timestamp="1380419667" />
+  <salaryAdjustment id="199" franchise_id="0007" amount="4.00" description="Drop Richardson ($13, G) in-season" timestamp="1382274305" />
+  <salaryAdjustment id="2" franchise_id="0001" amount="5.00" description="Drop Pettigrew in-season ($5 -- pay forward locked contract); " timestamp="1379741205" />
+  <salaryAdjustment id="20" franchise_id="0001" amount="1.00" description="Dropped V Green in-season" timestamp="1442495176" />
+  <salaryAdjustment id="200" franchise_id="0007" amount="-13.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="201" franchise_id="0007" amount="13.00" description="Drop McFadden before 2014 Rookie Auction" timestamp="1401330154" />
+  <salaryAdjustment id="202" franchise_id="0007" amount="1.00" description="Dropped A. Williams in-season" timestamp="1410439080" />
+  <salaryAdjustment id="203" franchise_id="0007" amount="6.00" description="Kept of Locker, Wright, and Gore in grade" timestamp="1410861182" />
+  <salaryAdjustment id="204" franchise_id="0007" amount="12.00" description="Dropped Gerhart in-season" timestamp="1412616163" />
+  <salaryAdjustment id="205" franchise_id="0007" amount="3.00" description="Dropped Davis after trade deadline; $3 cap hit in 2015" timestamp="1416497906" />
+  <salaryAdjustment id="206" franchise_id="0007" amount="2.00" description="Dropped Clay on a Saturday after picking him up on a Wendesday" timestamp="1416749595" />
+  <salaryAdjustment id="207" franchise_id="0007" amount="-37.00" description="End of 2014 Season" timestamp="1419441696" />
+  <salaryAdjustment id="208" franchise_id="0007" amount="3.00" description="2014 Player (Davis) dropped after dealine" timestamp="1419441906" />
+  <salaryAdjustment id="209" franchise_id="0007" amount="13.00" description="Dropped Pierce and Bowe off-season" timestamp="1432655417" />
+  <salaryAdjustment id="21" franchise_id="0001" amount="1.00" description="Dropped Helu in-season" timestamp="1443360823" />
+  <salaryAdjustment id="210" franchise_id="0007" amount="1.00" description="Dropped Streater in off-season" timestamp="1433075984" />
+  <salaryAdjustment id="211" franchise_id="0007" amount="3.00" description="$1 Dropped Hundley in off-season; $2 kept of Vereen in trade" timestamp="1439384925" />
+  <salaryAdjustment id="212" franchise_id="0007" amount="7.00" description="Manuel dropped in off-season" timestamp="1439611913" />
+  <salaryAdjustment id="213" franchise_id="0007" amount="2.00" description="Dropped Strong in-season" timestamp="1442495176" />
+  <salaryAdjustment id="214" franchise_id="0007" amount="9.00" description="Kept of T. Smith in trade" timestamp="1444256115" />
+  <salaryAdjustment id="215" franchise_id="0007" amount="-1.00" description="Adjusted for Streater hit (assigned to wrong team)" timestamp="1444396020" />
+  <salaryAdjustment id="216" franchise_id="0007" amount="6.00" description="Dropped Latimer in-season" timestamp="1446123524" />
+  <salaryAdjustment id="217" franchise_id="0007" amount="5.00" description="Kept of Perriman in trade" timestamp="1447996864" />
+  <salaryAdjustment id="218" franchise_id="0007" amount="1.00" description="Dropped Allen in same week after picking him up" timestamp="1448418673" />
+  <salaryAdjustment id="219" franchise_id="0007" amount="1.00" description="Dropped Hankerson after trade deadline ($1, 3G-2017)" timestamp="1449763314" />
+  <salaryAdjustment id="22" franchise_id="0001" amount="3.00" description="Dropped Beasley in-season" timestamp="1443724975" />
+  <salaryAdjustment id="220" franchise_id="0007" amount="-50.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="221" franchise_id="0007" amount="1.00" description="2015: dropped Hankerson after trade deadline" timestamp="1451514362" />
+  <salaryAdjustment id="222" franchise_id="0007" amount="4.00" description="Dropped Calvin Johnson off-season" timestamp="1472234340" />
+  <salaryAdjustment id="223" franchise_id="0007" amount="3.00" description="Dropped Barner in-season" timestamp="1472971089" />
+  <salaryAdjustment id="224" franchise_id="0007" amount="5.00" description="Dropped DJ Foster in-season" timestamp="1473608247" />
+  <salaryAdjustment id="225" franchise_id="0007" amount="5.00" description="Dropped Higbee in-season" timestamp="1475161130" />
+  <salaryAdjustment id="226" franchise_id="0007" amount="4.00" description="Dropped McDonald in-season" timestamp="1475344528" />
+  <salaryAdjustment id="227" franchise_id="0007" amount="5.00" description="Dropped Darkwa in-season" timestamp="1475769149" />
+  <salaryAdjustment id="228" franchise_id="0007" amount="1.00" description="Dropped Richard in-season" timestamp="1476971841" />
+  <salaryAdjustment id="229" franchise_id="0007" amount="1.00" description="Dropped Zenner in-season" timestamp="1477581846" />
+  <salaryAdjustment id="23" franchise_id="0001" amount="1.00" description="Dropped Taliaferro in-season" timestamp="1444306930" />
+  <salaryAdjustment id="230" franchise_id="0007" amount="1.00" description="Dropped C West in-season" timestamp="1478803721" />
+  <salaryAdjustment id="231" franchise_id="0007" amount="7.00" description="Dropped Langford in-season" timestamp="1480860799" />
+  <salaryAdjustment id="232" franchise_id="0007" amount="4.00" description="Dropped Brissett in-season" timestamp="1481726455" />
+  <salaryAdjustment id="233" franchise_id="0007" amount="-41.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="234" franchise_id="0008" amount="4.00" description="Kept of Greene's salary after trade" timestamp="1369277174" />
+  <salaryAdjustment id="235" franchise_id="0008" amount="10.00" description="Kept of Rivers's salary" timestamp="1372222001" />
+  <salaryAdjustment id="236" franchise_id="0008" amount="11.00" description="Drop Simspon, Gates before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="237" franchise_id="0008" amount="-25.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="238" franchise_id="0008" amount="3.00" description="Drop Flynn, Nassib before Rookie Auction" timestamp="1401332957" />
+  <salaryAdjustment id="239" franchise_id="0008" amount="1.00" description="Dropped Gillislee pre-Auction" timestamp="1408243046" />
+  <salaryAdjustment id="24" franchise_id="0001" amount="10.00" description="Dropped Randle in-season" timestamp="1447944805" />
+  <salaryAdjustment id="240" franchise_id="0008" amount="5.00" description="Dropped Moreno in-season" timestamp="1413487737" />
+  <salaryAdjustment id="241" franchise_id="0008" amount="2.00" description="Dropped Hunter ($2, L) in-season when put on IR" timestamp="1417655853" />
+  <salaryAdjustment id="242" franchise_id="0008" amount="-2.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="243" franchise_id="0008" amount="-9.00" description="End of 2014 Season" timestamp="1419441744" />
+  <salaryAdjustment id="244" franchise_id="0008" amount="2.00" description="Dropped J. Rodgers in season" timestamp="1441889116" />
+  <salaryAdjustment id="245" franchise_id="0008" amount="2.00" description="Dropped Colston" timestamp="1449763314" />
+  <salaryAdjustment id="246" franchise_id="0008" amount="-4.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="247" franchise_id="0008" amount="1.00" description="Dropped Oliver in-season" timestamp="1472840232" />
+  <salaryAdjustment id="248" franchise_id="0008" amount="-1.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="249" franchise_id="0009" amount="0.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="25" franchise_id="0001" amount="3.00" description="Kept of Decker in trade" timestamp="1447996864" />
+  <salaryAdjustment id="250" franchise_id="0009" amount="1.00" description="Dropped Jenkins pre-Auction" timestamp="1408421652" />
+  <salaryAdjustment id="251" franchise_id="0009" amount="9.00" description="Kept of Hillman in trade" timestamp="1415243392" />
+  <salaryAdjustment id="252" franchise_id="0009" amount="2.00" description="Dropped L. Thomas in-season" timestamp="1415855127" />
+  <salaryAdjustment id="253" franchise_id="0009" amount="-12.00" description="End of 2014 Season" timestamp="1419441696" />
+  <salaryAdjustment id="254" franchise_id="0009" amount="3.00" description="Dropped Gabbert (finally!!  :) ) in off-season" timestamp="1439866515" />
+  <salaryAdjustment id="255" franchise_id="0009" amount="3.00" description="Dropped Amaro in season (on IR)" timestamp="1441889116" />
+  <salaryAdjustment id="256" franchise_id="0009" amount="1.00" description="Dropped Dunbar on Saturday night after picking him on Wednesday night" timestamp="1443978057" />
+  <salaryAdjustment id="257" franchise_id="0009" amount="-7.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="258" franchise_id="0009" amount="20.00" description="Dropped Foles, A Ellington, A Johnson off-season" timestamp="1472234340" />
+  <salaryAdjustment id="259" franchise_id="0009" amount="2.00" description="Dropped Randle in-season" timestamp="1473209008" />
+  <salaryAdjustment id="26" franchise_id="0001" amount="5.00" description="Dropped Rudolph in-season ($3L-2016)" timestamp="1447997124" />
+  <salaryAdjustment id="260" franchise_id="0009" amount="1.00" description="Dropped Clemens in-season" timestamp="1473348473" />
+  <salaryAdjustment id="261" franchise_id="0009" amount="1.00" description="dropped A Williams in-season" timestamp="1473970635" />
+  <salaryAdjustment id="262" franchise_id="0009" amount="1.00" description="Dropped Kerley in-season" timestamp="1474528050" />
+  <salaryAdjustment id="263" franchise_id="0009" amount="9.00" description="Dropped R. Matthews, Henne, Asiate in-season" timestamp="1475769149" />
+  <salaryAdjustment id="264" franchise_id="0009" amount="1.00" description="Dropped Zenner in-season" timestamp="1476071418" />
+  <salaryAdjustment id="265" franchise_id="0009" amount="1.00" description="Dropped Anderson in-season" timestamp="1476371957" />
+  <salaryAdjustment id="266" franchise_id="0009" amount="4.00" description="Dropped Darkwa and Royal in-season" timestamp="1476971841" />
+  <salaryAdjustment id="267" franchise_id="0009" amount="1.00" description="Dropped K. Davis in season" timestamp="1478171998" />
+  <salaryAdjustment id="268" franchise_id="0009" amount="1.00" description="Dropped J Rodgers in season" timestamp="1478210571" />
+  <salaryAdjustment id="269" franchise_id="0009" amount="1.00" description="Dropped Harvin in-season" timestamp="1478803721" />
+  <salaryAdjustment id="27" franchise_id="0001" amount="7.00" description="Dropped Lynch after Trade Deadline ($7 DCH in 2016)" timestamp="1449153788" />
+  <salaryAdjustment id="270" franchise_id="0009" amount="1.00" description="Dropped Treggs in-season" timestamp="1479397840" />
+  <salaryAdjustment id="271" franchise_id="0009" amount="32.00" description="Dropped Foles, J White, Royal, and Wheaton in-season" timestamp="1482386714" />
+  <salaryAdjustment id="272" franchise_id="0009" amount="45.00" description="Dropped Aiken in-season" timestamp="1482423580" />
+  <salaryAdjustment id="273" franchise_id="0009" amount="-121.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="274" franchise_id="0010" amount="3.00" description="Kept of Barkley's salary" timestamp="1372222001" />
+  <salaryAdjustment id="275" franchise_id="0010" amount="24.00" description="Drop Hardesty, Snelling, Turner, Lloyd, Winslow before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="276" franchise_id="0010" amount="1.00" description="Drop Lewis, $2 Guar contract" timestamp="1380419667" />
+  <salaryAdjustment id="277" franchise_id="0010" amount="-28.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="278" franchise_id="0010" amount="2.00" description="Dropped Barkley pre-Auction" timestamp="1408321711" />
+  <salaryAdjustment id="279" franchise_id="0010" amount="-2.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="28" franchise_id="0001" amount="3.00" description="Dropped Matthews after picked up on Wednesday" timestamp="1449372273" />
+  <salaryAdjustment id="280" franchise_id="0010" amount="14.00" description="9 kept of Bernard, 5 kept of ball in trade" timestamp="1424969796" />
+  <salaryAdjustment id="281" franchise_id="0010" amount="7.00" description="Garcon and R. Rodgers dropped in off-season" timestamp="1439611840" />
+  <salaryAdjustment id="282" franchise_id="0010" amount="6.00" description="Dropped D. Smith in-season" timestamp="1445540630" />
+  <salaryAdjustment id="283" franchise_id="0010" amount="2.00" description="Dropped Aiken after picking him up the same week" timestamp="1447003984" />
+  <salaryAdjustment id="284" franchise_id="0010" amount="8.00" description="Dropped Spiller in-season (retroactive to 12/20/15, incorrectly recorded)" timestamp="1450989894" />
+  <salaryAdjustment id="285" franchise_id="0010" amount="-37.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="286" franchise_id="0010" amount="2.00" description="Dropped Zenner and Tye in-season" timestamp="1473970635" />
+  <salaryAdjustment id="287" franchise_id="0010" amount="1.00" description="Dropped Pitta in-season" timestamp="1475769149" />
+  <salaryAdjustment id="288" franchise_id="0010" amount="1.00" description="Dropped Kerley in-season" timestamp="1476971841" />
+  <salaryAdjustment id="289" franchise_id="0010" amount="6.00" description="Dropped McCown in-season" timestamp="1478803721" />
+  <salaryAdjustment id="29" franchise_id="0001" amount="-47.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="290" franchise_id="0010" amount="25.00" description="Held of Shepard in trade" timestamp="1479453235" />
+  <salaryAdjustment id="291" franchise_id="0010" amount="1.00" description="Dropped Bellamy in-season" timestamp="1481477414" />
+  <salaryAdjustment id="292" franchise_id="0010" amount="31.00" description="Dropped Gabbert in-season" timestamp="1481819349" />
+  <salaryAdjustment id="293" franchise_id="0010" amount="25.00" description="Dropped Treadwell and Starks in-season" timestamp="1482115735" />
+  <salaryAdjustment id="294" franchise_id="0010" amount="1.00" description="Dropped Morris in-season" timestamp="1482734624" />
+  <salaryAdjustment id="295" franchise_id="0010" amount="-93.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="296" franchise_id="0011" amount="24.00" description="Kept of Foster's salary after trade" timestamp="1369182559" />
+  <salaryAdjustment id="297" franchise_id="0011" amount="21.00" description="kept of McCoy's salary after trade" timestamp="1369182580" />
+  <salaryAdjustment id="298" franchise_id="0011" amount="4.00" description="Kept of Escobar's salary" timestamp="1369623964" />
+  <salaryAdjustment id="299" franchise_id="0011" amount="15.00" description="kept of Smith's salary after trade" timestamp="1369701518" />
+  <salaryAdjustment id="3" franchise_id="0001" amount="7.00" description="Dropped Sanchez ($8, guar) and J Franklin ($5 guar) in season" timestamp="1384290740" />
+  <salaryAdjustment id="30" franchise_id="0001" amount="7.00" description="2015: dropped Lynch after trade deadline" timestamp="1451514362" />
+  <salaryAdjustment id="300" franchise_id="0011" amount="2.00" description="kept of Fleener's salary after trade" timestamp="1369701530" />
+  <salaryAdjustment id="301" franchise_id="0011" amount="10.00" description="Kept of Greene's salary after trade" timestamp="1371144635" />
+  <salaryAdjustment id="302" franchise_id="0011" amount="2.00" description="kept of Britt's salary" timestamp="1373861443" />
+  <salaryAdjustment id="303" franchise_id="0011" amount="2.00" description="Drop Greene before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="304" franchise_id="0011" amount="19.00" description="Kept by Bobby of A. Smith" timestamp="1377635484" />
+  <salaryAdjustment id="305" franchise_id="0011" amount="-99.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="306" franchise_id="0011" amount="8.00" description="Drop B. Brown, Finley, D. Thomas before rookie auction" timestamp="1401335256" />
+  <salaryAdjustment id="307" franchise_id="0011" amount="2.00" description="kept of fleener in trade" timestamp="1403447610" />
+  <salaryAdjustment id="308" franchise_id="0011" amount="1.00" description="Dropped L. James in off-season" timestamp="1405608592" />
+  <salaryAdjustment id="309" franchise_id="0011" amount="4.00" description="kept of richardon's salary in trade" timestamp="1405871171" />
+  <salaryAdjustment id="31" franchise_id="0001" amount="2.00" description="Kept of Graham's salary in trade" timestamp="1462845050" />
+  <salaryAdjustment id="310" franchise_id="0011" amount="2.00" description="Kept of Richardson in trade" timestamp="1406219499" />
+  <salaryAdjustment id="311" franchise_id="0011" amount="11.00" description="Kept of Rodgers after trade" timestamp="1406429169" />
+  <salaryAdjustment id="312" franchise_id="0011" amount="10.00" description="Kept of Sankey in trade" timestamp="1406721966" />
+  <salaryAdjustment id="313" franchise_id="0011" amount="1.00" description="Dropped Greene pre-Auction" timestamp="1408284910" />
+  <salaryAdjustment id="314" franchise_id="0011" amount="24.00" description="2014:  in-season, drop Bradford when put on IR" timestamp="1409106663" />
+  <salaryAdjustment id="315" franchise_id="0011" amount="1.00" description="Kept by Britt's salary in trade" timestamp="1410094361" />
+  <salaryAdjustment id="316" franchise_id="0011" amount="-64.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="317" franchise_id="0011" amount="8.00" description="T Richardson dropped in pre-season" timestamp="1422408860" />
+  <salaryAdjustment id="318" franchise_id="0011" amount="5.00" description="Dropped Chris Johnson ($17G) in off-season" timestamp="1423682760" />
+  <salaryAdjustment id="319" franchise_id="0011" amount="5.00" description="Kept of Luck's salary" timestamp="1424320338" />
+  <salaryAdjustment id="32" franchise_id="0001" amount="5.00" description="Dropped Bryant, Garcon off-season" timestamp="1472234340" />
+  <salaryAdjustment id="320" franchise_id="0011" amount="3.00" description="kept of Freeman's salary in trade" timestamp="1427385706" />
+  <salaryAdjustment id="321" franchise_id="0011" amount="11.00" description="$9 of Eifert and $2 of Patterson kept in salary after trade" timestamp="1432927767" />
+  <salaryAdjustment id="322" franchise_id="0011" amount="2.00" description="Kept of Watkins in trade" timestamp="1433437634" />
+  <salaryAdjustment id="323" franchise_id="0011" amount="1.00" description="Dropped S Taylor in off-season" timestamp="1434552787" />
+  <salaryAdjustment id="324" franchise_id="0011" amount="1.00" description="Dropped B Tate in off-season" timestamp="1434581378" />
+  <salaryAdjustment id="325" franchise_id="0011" amount="6.00" description="Kept of Winston in trade" timestamp="1435503732" />
+  <salaryAdjustment id="326" franchise_id="0011" amount="4.00" description="Kept by Bobby in trade of DGB" timestamp="1438523439" />
+  <salaryAdjustment id="327" franchise_id="0011" amount="19.00" description="kept $8 of D Johnson and $11 of Parker after trade" timestamp="1438957870" />
+  <salaryAdjustment id="328" franchise_id="0011" amount="1.00" description="Mettenberger dropped in off-season" timestamp="1439611913" />
+  <salaryAdjustment id="329" franchise_id="0011" amount="-66.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="33" franchise_id="0001" amount="3.00" description="Dropped Watson, Greyson, Carey in-season" timestamp="1474384841" />
+  <salaryAdjustment id="330" franchise_id="0011" amount="7.00" description="Dropped Manziel in off-season (on an old const. contract)" timestamp="1460740037" />
+  <salaryAdjustment id="331" franchise_id="0011" amount="9.00" description="Kept of Brady in trade" timestamp="1460777452" />
+  <salaryAdjustment id="332" franchise_id="0011" amount="6.00" description="Dropped Wright in-season" timestamp="1473348473" />
+  <salaryAdjustment id="333" franchise_id="0011" amount="5.00" description="Dropped Strong in-season" timestamp="1475415733" />
+  <salaryAdjustment id="334" franchise_id="0011" amount="-27.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="335" franchise_id="0012" amount="1.00" description="Kept of Eifert's salary after trade" timestamp="1371620440" />
+  <salaryAdjustment id="336" franchise_id="0012" amount="4.00" description="Drop Egnew, Benson, Jacobs before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="337" franchise_id="0012" amount="-5.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="338" franchise_id="0012" amount="6.00" description="dropped mendenhall, quick in off-season" timestamp="1402511715" />
+  <salaryAdjustment id="339" franchise_id="0012" amount="3.00" description="Dropped Hunter, Redman, Pryor before auction" timestamp="1407775345" />
+  <salaryAdjustment id="34" franchise_id="0001" amount="1.00" description="Dropped Gillmore in-season" timestamp="1474528050" />
+  <salaryAdjustment id="340" franchise_id="0012" amount="4.00" description="Kept of Eifert's salary in trade" timestamp="1408976763" />
+  <salaryAdjustment id="341" franchise_id="0012" amount="20.00" description="Dropped Cruz, D Adams in-season" timestamp="1415855127" />
+  <salaryAdjustment id="342" franchise_id="0012" amount="-33.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="343" franchise_id="0012" amount="3.00" description="Dropped Stills in-season" timestamp="1445365458" />
+  <salaryAdjustment id="344" franchise_id="0012" amount="25.00" description="Kept of Brees in trade" timestamp="1447861096" />
+  <salaryAdjustment id="345" franchise_id="0012" amount="20.00" description="Penalty for delay in getting advancements in" timestamp="1448156199" />
+  <salaryAdjustment id="346" franchise_id="0012" amount="-48.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="347" franchise_id="0012" amount="3.00" description="Dropped Petty off-season" timestamp="1472234340" />
+  <salaryAdjustment id="348" franchise_id="0012" amount="15.00" description="Dropped T. Smith in-season" timestamp="1474555539" />
+  <salaryAdjustment id="349" franchise_id="0012" amount="2.00" description="Dropped Whittaker in-season" timestamp="1477672219" />
+  <salaryAdjustment id="35" franchise_id="0001" amount="1.00" description="Dropped Greene in-season" timestamp="1474811266" />
+  <salaryAdjustment id="350" franchise_id="0012" amount="-20.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="351" franchise_id="0002" amount="6.00" description="Kept of Hyde by Steve in trade" timestamp="1494282384" />
+  <salaryAdjustment id="352" franchise_id="0001" amount="3.00" description="Dropped Tye, Roberts, and Carroo in off-season" timestamp="1495311981" />
+  <salaryAdjustment id="353" franchise_id="0007" amount="2.00" description="Dropped D. Washington in off-season" timestamp="1495318539" />
+  <salaryAdjustment id="354" franchise_id="0004" amount="32.00" description="Dropped a bunch of players in the off-season" timestamp="1495490830" />
+  <salaryAdjustment id="355" franchise_id="0005" amount="10.00" description="Dropped Barnidge and Cruz in off-season" timestamp="1495502649" />
+  <salaryAdjustment id="356" franchise_id="0008" amount="14.00" description="7 each kept of Hyde and D. Bryant in trade" timestamp="1496173428" />
+  <salaryAdjustment id="357" franchise_id="0002" amount="5.00" description="Kept of P Lynch in trade" timestamp="1502240298" />
+  <salaryAdjustment id="358" franchise_id="0012" amount="7.00" description="Dropped Griffen in off-season" timestamp="1502411066" />
+  <salaryAdjustment id="359" franchise_id="0006" amount="2.00" description="Kept of Dixon in trade" timestamp="1503409558" />
+  <salaryAdjustment id="36" franchise_id="0001" amount="1.00" description="Dropped Patton in-season" timestamp="1475161130" />
+  <salaryAdjustment id="360" franchise_id="0003" amount="10.00" description="Cut Martin (1/2) in off-season" timestamp="1503450616" />
+  <salaryAdjustment id="361" franchise_id="0005" amount="6.00" description="Dropped Fuller (halved) and Coates in off-season" timestamp="1503450873" />
+  <salaryAdjustment id="362" franchise_id="0009" amount="5.00" description="Dropped Romo (halved) in off-season" timestamp="1503450948" />
+  <salaryAdjustment id="363" franchise_id="0007" amount="1.00" description="Dropped McKinnon (halved) in off-season" timestamp="1503451047" />
+  <salaryAdjustment id="364" franchise_id="0008" amount="8.00" description="Dropped Tannehill (halved) and R. Rodgers in off-season" timestamp="1503451111" />
+  <salaryAdjustment id="365" franchise_id="0002" amount="16.00" description="Dropped Savage (halved) Patterson, and Derby in off-season" timestamp="1503451259" />
+  <salaryAdjustment id="366" franchise_id="0010" amount="5.00" description="Dropped Green-Beckham (halved), Kaepernick, Yeldon in off-season" timestamp="1503451590" />
+  <salaryAdjustment id="367" franchise_id="0006" amount="8.00" description="Dropped Green (halved), C Jones, Floyd in off-season" timestamp="1503451685" />
+  <salaryAdjustment id="368" franchise_id="0012" amount="7.00" description="Dropped Michael (halved) in off-season" timestamp="1503451841" />
+  <salaryAdjustment id="369" franchise_id="0001" amount="8.00" description="Dropped Dixon (halved) and Hogan in off-season" timestamp="1503451924" />
+  <salaryAdjustment id="37" franchise_id="0001" amount="4.00" description="Dropped Garcon and Allen in-season" timestamp="1475415733" />
+  <salaryAdjustment id="370" franchise_id="0004" amount="-3.00" description="3 added back to cap -- Prosise dropped earlier and most expensive off-season drop" timestamp="1503452128" />
+  <salaryAdjustment id="371" franchise_id="0004" amount="7.00" description="Dropped Petty, Ferguson, Walford in off-season" timestamp="1503452520" />
+  <salaryAdjustment id="372" franchise_id="0006" amount="5.00" description="Kept of M. Williams in trade" timestamp="1503875876" />
+  <salaryAdjustment id="373" franchise_id="0005" amount="4.00" description="Kept of Miller in trade" timestamp="1504036168" />
+  <salaryAdjustment id="374" franchise_id="0006" amount="2.00" description="Kept of McCaffery in trade" timestamp="1504053963" />
+  <salaryAdjustment id="375" franchise_id="0006" amount="3.00" description="Dropped Higbee in-season" timestamp="1504789993" />
+  <salaryAdjustment id="376" franchise_id="0011" amount="3.00" description="Dropped Treggs in-season" timestamp="1504789993" />
+  <salaryAdjustment id="377" franchise_id="0002" amount="1.00" description="Dropped Sporles in-season" timestamp="1504790221" />
+  <salaryAdjustment id="378" franchise_id="0001" amount="1.00" description="Dropped Oliver in-season" timestamp="1504818920" />
+  <salaryAdjustment id="379" franchise_id="0001" amount="5.00" description="Dropped McFadden in-season" timestamp="1505047542" />
+  <salaryAdjustment id="38" franchise_id="0001" amount="1.00" description="Dropped D. Sims in-season" timestamp="1476071418" />
+  <salaryAdjustment id="380" franchise_id="0010" amount="2.00" description="Dropped Lacy in-season" timestamp="1505391178" />
+  <salaryAdjustment id="381" franchise_id="0001" amount="1.00" description="Dropped Juszczyk in-season" timestamp="1505667617" />
+  <salaryAdjustment id="382" franchise_id="0002" amount="1.00" description="Dropped Tolzien in-season" timestamp="1505667617" />
+  <salaryAdjustment id="383" franchise_id="0007" amount="1.00" description="Dropped Richardson in-season" timestamp="1506019253" />
+  <salaryAdjustment id="384" franchise_id="0008" amount="2.00" description="Dropped Moore in-season" timestamp="1506226177" />
+  <salaryAdjustment id="385" franchise_id="0006" amount="1.00" description="Dropped Wright in-season" timestamp="1506253622" />
+  <salaryAdjustment id="386" franchise_id="0003" amount="1.00" description="Dropped Ivory in-season" timestamp="1506603623" />
+  <salaryAdjustment id="387" franchise_id="0008" amount="1.00" description="Dropped K Williams in-season" timestamp="1506603623" />
+  <salaryAdjustment id="388" franchise_id="0010" amount="5.00" description="Dropped J. Williams in-season" timestamp="1506603623" />
+  <salaryAdjustment id="389" franchise_id="0001" amount="1.00" description="Dropped J. Rodgers in-season" timestamp="1507246403" />
+  <salaryAdjustment id="39" franchise_id="0001" amount="3.00" description="Dropped Ginn in-season" timestamp="1476622146" />
+  <salaryAdjustment id="390" franchise_id="0007" amount="2.00" description="Dropped B Watson in-season" timestamp="1507246403" />
+  <salaryAdjustment id="391" franchise_id="0010" amount="1.00" description="Dropped Tolbert in-season" timestamp="1507246403" />
+  <salaryAdjustment id="392" franchise_id="0001" amount="3.00" description="Dropped Hackenberg in-season" timestamp="1507472129" />
+  <salaryAdjustment id="393" franchise_id="0003" amount="1.00" description="Dropped Griffin in-season" timestamp="1507472129" />
+  <salaryAdjustment id="394" franchise_id="0008" amount="2.00" description="Dropped McDonald in-season" timestamp="1507472129" />
+  <salaryAdjustment id="395" franchise_id="0007" amount="1.00" description="Dropped Wright in-season" timestamp="1507820462" />
+  <salaryAdjustment id="396" franchise_id="0009" amount="9.00" description="Dropped Marshall in-season" timestamp="1507820462" />
+  <salaryAdjustment id="397" franchise_id="0010" amount="1.00" description="Dropped Richardson in-season" timestamp="1507820462" />
+  <salaryAdjustment id="398" franchise_id="0011" amount="8.00" description="Dropped D Allen in-season" timestamp="1507820462" />
+  <salaryAdjustment id="399" franchise_id="0008" amount="1.00" description="Dropped Manuel in-season" timestamp="1508118056" />
+  <salaryAdjustment id="4" franchise_id="0001" amount="4.00" description="Dropped S. Smith in season ($7 G)" timestamp="1384397657" />
+  <salaryAdjustment id="40" franchise_id="0001" amount="1.00" description="Dropped McCoy in-season" timestamp="1476971841" />
+  <salaryAdjustment id="400" franchise_id="0005" amount="21.00" description="Kept of Snead in trade" timestamp="1508374013" />
+  <salaryAdjustment id="401" franchise_id="0001" amount="1.00" description="Dropped Britt in-season" timestamp="1508418058" />
+  <salaryAdjustment id="402" franchise_id="0007" amount="2.00" description="Dropped K Hogan in-season" timestamp="1508418058" />
+  <salaryAdjustment id="403" franchise_id="0009" amount="3.00" description="Dropped Quick in-season" timestamp="1508418058" />
+  <salaryAdjustment id="404" franchise_id="0003" amount="42.00" description="10 of Stafford and 32 of Hopkins kept in trade" timestamp="1508858063" />
+  <salaryAdjustment id="405" franchise_id="0006" amount="0.00" description="2018: 21 of Manning to be kept in trade" timestamp="1508858090" />
+  <salaryAdjustment id="406" franchise_id="0007" amount="5.00" description="Kept of Flacco in trade" timestamp="1509022406" />
+  <salaryAdjustment id="407" franchise_id="0003" amount="1.00" description="Dropped Dickson in-season" timestamp="1509022546" />
+  <salaryAdjustment id="408" franchise_id="0007" amount="3.00" description="Dropped Moore in-season" timestamp="1509466329" />
+  <salaryAdjustment id="409" franchise_id="0006" amount="2.00" description="Dropped Fowler in-season" timestamp="1509628513" />
+  <salaryAdjustment id="41" franchise_id="0001" amount="2.00" description="Dropped Burton, Pruitt in-season" timestamp="1477231229" />
+  <salaryAdjustment id="410" franchise_id="0001" amount="2.00" description="Dropped Luck in-season" timestamp="1509746966" />
+  <salaryAdjustment id="411" franchise_id="0001" amount="3.00" description="Dropped Bennett in-season" timestamp="1509893340" />
+  <salaryAdjustment id="412" franchise_id="0005" amount="10.00" description="Dropped P Cooper in-season" timestamp="1510234313" />
+  <salaryAdjustment id="413" franchise_id="0007" amount="19.00" description="Dropped Njoku in-season" timestamp="1510854712" />
+  <salaryAdjustment id="414" franchise_id="0006" amount="12.00" description="Dropped West in-season" timestamp="1511057365" />
+  <salaryAdjustment id="415" franchise_id="0001" amount="1.00" description="Dropped Snead in-season" timestamp="1511097414" />
+  <salaryAdjustment id="416" franchise_id="0006" amount="17.00" description="Dropped Treadwell in-season" timestamp="1511097414" />
+  <salaryAdjustment id="417" franchise_id="0007" amount="14.00" description="Dropped Hogan in-season" timestamp="1511097414" />
+  <salaryAdjustment id="418" franchise_id="0006" amount="4.00" description="Dropped Hodges in-season" timestamp="1511653936" />
+  <salaryAdjustment id="419" franchise_id="0007" amount="3.00" description="Dropped J Richard in-season" timestamp="1511653936" />
+  <salaryAdjustment id="42" franchise_id="0001" amount="1.00" description="Dropped Quick in-season" timestamp="1480860799" />
+  <salaryAdjustment id="420" franchise_id="0003" amount="2.00" description="Dropped Langford in-season" timestamp="1511654343" />
+  <salaryAdjustment id="421" franchise_id="0011" amount="10.00" description="Dropped Rogers in-season" timestamp="1511681524" />
+  <salaryAdjustment id="422" franchise_id="0008" amount="6.00" description="Kept of Rivers by Ephraim in trade" timestamp="1511969056" />
+  <salaryAdjustment id="423" franchise_id="0002" amount="16.00" description="Kept of Walker in trade" timestamp="1511970445" />
+  <salaryAdjustment id="424" franchise_id="0012" amount="30.00" description="Kept of Gore, Washington, and Stills in trade" timestamp="1511992555" />
+  <salaryAdjustment id="425" franchise_id="0001" amount="5.00" description="Dropped D. Washington in-season" timestamp="1511992730" />
+  <salaryAdjustment id="426" franchise_id="0002" amount="1.00" description="Dropped A Ellington in-season" timestamp="1512043486" />
+  <salaryAdjustment id="427" franchise_id="0005" amount="3.00" description="Dropped Prosise (2) and Gates (1) in-season" timestamp="1512043486" />
+  <salaryAdjustment id="428" franchise_id="0010" amount="4.00" description="Dropped Brate in-season" timestamp="1512043486" />
+  <salaryAdjustment id="429" franchise_id="0011" amount="5.00" description="Dropped Beasley in-season" timestamp="1512043486" />
+  <salaryAdjustment id="43" franchise_id="0001" amount="3.00" description="Dropped Collins in-season" timestamp="1482387156" />
+  <salaryAdjustment id="430" franchise_id="0006" amount="2.00" description="Dropped Moore in-season" timestamp="1512356408" />
+  <salaryAdjustment id="431" franchise_id="0005" amount="8.00" description="Dropped B. Millerin-season" timestamp="1512358418" />
+  <salaryAdjustment id="432" franchise_id="0006" amount="1.00" description="Dropped B Ellington in-season" timestamp="1512525699" />
+  <salaryAdjustment id="433" franchise_id="0010" amount="1.00" description="Dropped J Rodgers in-season" timestamp="1512660597" />
+  <salaryAdjustment id="434" franchise_id="0006" amount="9.00" description="Dropped J Allen and Reed in-season" timestamp="1512924022" />
+  <salaryAdjustment id="435" franchise_id="0007" amount="1.00" description="Dropped S Anderson in-season" timestamp="1512924022" />
+  <salaryAdjustment id="436" franchise_id="0001" amount="3.00" description="Dropped McCown in-season" timestamp="1513238793" />
+  <salaryAdjustment id="437" franchise_id="0006" amount="2.00" description="Dropped Brate in-season" timestamp="1513238793" />
+  <salaryAdjustment id="438" franchise_id="0009" amount="6.00" description="Dropped Hansen in-season" timestamp="1513238793" />
+  <salaryAdjustment id="439" franchise_id="0006" amount="1.00" description="Dropped Ivory in-season" timestamp="1513706390" />
+  <salaryAdjustment id="44" franchise_id="0001" amount="-35.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="440" franchise_id="0009" amount="2.00" description="Dropped T. Williams in-season" timestamp="1513710857" />
+  <salaryAdjustment id="441" franchise_id="0007" amount="37.00" description="Dropped Adams and D Thomas in-season" timestamp="1513866909" />
+  <salaryAdjustment id="442" franchise_id="0010" amount="1.00" description="Dropped Collins in-season" timestamp="1513866960" />
+  <salaryAdjustment id="443" franchise_id="0011" amount="1.00" description="Dropped Yeldon in-season" timestamp="1513866960" />
+  <salaryAdjustment id="444" franchise_id="0006" amount="17.00" description="Dropped Sanders in-season" timestamp="1514131870" />
+  <salaryAdjustment id="445" franchise_id="0010" amount="4.00" description="Dropped M. Davis in-season" timestamp="1514131870" />
+  <salaryAdjustment id="446" franchise_id="0001" amount="2" description="Dropped Foles in-season" timestamp="1519273438" />
+  <salaryAdjustment id="447" franchise_id="0001" amount="2" description="Dropped T Green in-season" timestamp="1519273587" />
+  <salaryAdjustment id="448" franchise_id="0001" amount="3" description="Drop Montgomery in off-season" timestamp="1519273995" />
+  <salaryAdjustment id="45" franchise_id="0002" amount="20.00" description="Kept of McFadden's salary after trade" timestamp="1373171945" />
+  <salaryAdjustment id="450" franchise_id="0008" amount="1" description="Dropped Kroft in-season" timestamp="1519316798" />
+  <salaryAdjustment id="452" franchise_id="0010" amount="19" description="Dropped D Martin in-season" timestamp="1519329463" />
+  <salaryAdjustment id="453" franchise_id="0005" amount="13" description="Dropped Allison, Conley in-season" timestamp="1519352160" />
+  <salaryAdjustment id="454" franchise_id="0006" amount="12" description="Dropped Riddick in-season" timestamp="1519352293" />
+  <salaryAdjustment id="455" franchise_id="0002" amount="15" description="Dropped Eifert in-season" timestamp="1519441957" />
+  <salaryAdjustment id="456" franchise_id="0002" amount="29" description="Dropped Rawls in-season" timestamp="1519516713" />
+  <salaryAdjustment id="457" franchise_id="0007" amount="14" description="Dropped Ware in-season" timestamp="1519743690" />
+  <salaryAdjustment id="458" franchise_id="0007" amount="21" description="Dropped Cutler in-season" timestamp="1519745538" />
+  <salaryAdjustment id="459" franchise_id="0008" amount="4" description="Dropped Pryor in-season" timestamp="1519746028" />
+  <salaryAdjustment id="46" franchise_id="0002" amount="25.00" description="Drop Nicks before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="460" franchise_id="0004" amount="12" description="Drop Dorsett in-season" timestamp="1519749049" />
+  <salaryAdjustment id="461" franchise_id="0004" amount="16" description="Drop J Williams in-season" timestamp="1519749097" />
+  <salaryAdjustment id="463" franchise_id="0004" amount="22" description="Dropped Savage in-season" timestamp="1519749788" />
+  <salaryAdjustment id="465" franchise_id="0012" amount="7" description="Dropped Miller in-season" timestamp="1519760841" />
+  <salaryAdjustment id="466" franchise_id="0012" amount="32" description="Dropped L Murray in-season" timestamp="1519762388" />
+  <salaryAdjustment id="467" franchise_id="0004" amount="4" description="Dropped McNichols in off-season" timestamp="1519927431" />
+  <salaryAdjustment id="468" franchise_id="0004" amount="5" description="Dropped J. Thomas in off-season" timestamp="1519927665" />
+  <salaryAdjustment id="469" franchise_id="0004" amount="3" description="Dropped Charles in-season" timestamp="1519927724" />
+  <salaryAdjustment id="47" franchise_id="0002" amount="1.00" description="Drop Turbin, $2 Guar contract" timestamp="1380419667" />
+  <salaryAdjustment id="470" franchise_id="0003" amount="1" description="Dropped Stanton in-season" timestamp="1519927877" />
+  <salaryAdjustment id="471" franchise_id="0003" amount="7" description="Dropped Lacy in-season" timestamp="1519927913" />
+  <salaryAdjustment id="472" franchise_id="0003" amount="-65" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="473" franchise_id="0001" amount="-44" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="474" franchise_id="0004" amount="-98" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="475" franchise_id="0009" amount="-25" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="476" franchise_id="0005" amount="-75" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="477" franchise_id="0008" amount="-39" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="478" franchise_id="0007" amount="-126" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="479" franchise_id="0011" amount="-27" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="48" franchise_id="0002" amount="1.00" description="dropped v brown ($3G) after trade deadline.  $1 DCH in 2013; $1 DCH in 2014" timestamp="1385826369" />
+  <salaryAdjustment id="480" franchise_id="0012" amount="-83" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="481" franchise_id="0010" amount="-43" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="482" franchise_id="0006" amount="-104" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="483" franchise_id="0002" amount="-90" description="End of 2017 season" timestamp="1520013527" />
+  <salaryAdjustment id="484" franchise_id="0008" amount="8" description="Kept of D Bryant in previous season trade" timestamp="1520014997" />
+  <salaryAdjustment id="485" franchise_id="0007" amount="5" description="Kept of D Bryant in previous season trade" timestamp="1520014997" />
+  <salaryAdjustment id="486" franchise_id="0007" amount="3" description="Kept of Ekeler in previous season trade" timestamp="1520015288" />
+  <salaryAdjustment id="487" franchise_id="0008" amount="5" description="Kept of Hyde in previous season trade" timestamp="1520016071" />
+  <salaryAdjustment id="488" franchise_id="0006" amount="21" description="Kept of Manning in previous season trade" timestamp="1520016071" />
+  <salaryAdjustment id="489" franchise_id="0006" amount="4" description="Kept of Watkins in previous season trade" timestamp="1520016081" />
+  <salaryAdjustment id="49" franchise_id="0002" amount="0.00" description="DCH for V Brown, 2014" timestamp="1385826392" />
+  <salaryAdjustment id="490" franchise_id="0001" amount="2" description="Kept of Ingram in trade" timestamp="1520437194" />
+  <salaryAdjustment id="491" franchise_id="0006" amount="4" description="Kept by Aaron in trade of J. Williams" timestamp="1521221437" />
+  <salaryAdjustment id="5" franchise_id="0001" amount="8.00" description="Dropped L. Moore ($8L-2013); paid full salary forward" timestamp="1384441528" />
+  <salaryAdjustment id="50" franchise_id="0002" amount="-47.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="51" franchise_id="0002" amount="1.00" description="V Brown dropped in 2013 after trade deadline" timestamp="1387951535" />
+  <salaryAdjustment id="52" franchise_id="0002" amount="16.00" description="Kept of Rodger's salary in trade" timestamp="1405703794" />
+  <salaryAdjustment id="53" franchise_id="0002" amount="1.00" description="kept of hill after trade" timestamp="1406773213" />
+  <salaryAdjustment id="54" franchise_id="0002" amount="5.00" description="Dropped Freeman pre-Auction" timestamp="1408243016" />
+  <salaryAdjustment id="55" franchise_id="0002" amount="7.00" description="Dropped S Johnson, Randle, Austin pre-Auction" timestamp="1408284910" />
+  <salaryAdjustment id="56" franchise_id="0002" amount="5.00" description="Dropped Savage in-season; dropped M Williams in-season" timestamp="1410707150" />
+  <salaryAdjustment id="57" franchise_id="0002" amount="1.00" description="Dropped M. Brown in-season" timestamp="1411048605" />
+  <salaryAdjustment id="58" franchise_id="0002" amount="-36.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="59" franchise_id="0002" amount="2.00" description="$1 kept each of Miller and Latimer in trade" timestamp="1432655666" />
+  <salaryAdjustment id="6" franchise_id="0001" amount="-30.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="60" franchise_id="0002" amount="1.00" description="Dropped Gordon in off-season" timestamp="1433382856" />
+  <salaryAdjustment id="61" franchise_id="0002" amount="1.00" description="Dropped K. Robinson in-season" timestamp="1443724975" />
+  <salaryAdjustment id="62" franchise_id="0002" amount="4.00" description="Dropped Davis in-season" timestamp="1444306930" />
+  <salaryAdjustment id="63" franchise_id="0002" amount="2.00" description="Dropped Quick in-season" timestamp="1447813767" />
+  <salaryAdjustment id="64" franchise_id="0002" amount="1.00" description="The Quick drop was supposed to be $3, not $2" timestamp="1447813949" />
+  <salaryAdjustment id="65" franchise_id="0002" amount="7.00" description="Kept of West in trade" timestamp="1447820839" />
+  <salaryAdjustment id="66" franchise_id="0002" amount="17.00" description="Dropped Bradford in-season" timestamp="1447945393" />
+  <salaryAdjustment id="67" franchise_id="0002" amount="-35.00" description="end of year" timestamp="1451514292" />
+  <salaryAdjustment id="68" franchise_id="0002" amount="3.00" description="Kept of Abdullah in trade" timestamp="1469724814" />
+  <salaryAdjustment id="69" franchise_id="0002" amount="2.00" description="Dropped Gaffney in-season" timestamp="1472927974" />
+  <salaryAdjustment id="7" franchise_id="0001" amount="17.00" description="Dropped Weeden and Rice pre-Auction" timestamp="1408421652" />
+  <salaryAdjustment id="70" franchise_id="0002" amount="4.00" description="Dropped Graham in-season" timestamp="1473254610" />
+  <salaryAdjustment id="71" franchise_id="0002" amount="9.00" description="dropped Ervin in-season" timestamp="1473970635" />
+  <salaryAdjustment id="72" franchise_id="0002" amount="5.00" description="Dropped Seferian-Jenkins in-season" timestamp="1474811266" />
+  <salaryAdjustment id="73" franchise_id="0002" amount="4.00" description="Dropped Cadet in-season" timestamp="1475415733" />
+  <salaryAdjustment id="74" franchise_id="0002" amount="4.00" description="Dropped Tye in-season" timestamp="1476371957" />
+  <salaryAdjustment id="75" franchise_id="0002" amount="1.00" description="Dropped Seferian-Jenkins in-season" timestamp="1476971841" />
+  <salaryAdjustment id="76" franchise_id="0002" amount="18.00" description="Dropped C Hogan, V Green in-season" timestamp="1477581846" />
+  <salaryAdjustment id="77" franchise_id="0002" amount="1.00" description="Dropped An. Smith in-season" timestamp="1479051189" />
+  <salaryAdjustment id="78" franchise_id="0002" amount="18.00" description="Held of Osweiler and White in trade" timestamp="1479453208" />
+  <salaryAdjustment id="79" franchise_id="0002" amount="1.00" description="Dropped Thompson in-season" timestamp="1480096952" />
+  <salaryAdjustment id="8" franchise_id="0001" amount="1.00" description="Dropped Thompkins in-season" timestamp="1409843852" />
+  <salaryAdjustment id="80" franchise_id="0002" amount="6.00" description="Dropped Pitta and Funchess in-season" timestamp="1480620817" />
+  <salaryAdjustment id="81" franchise_id="0002" amount="15.00" description="Dropped Fitzpatrick and Powell in-season" timestamp="1481213549" />
+  <salaryAdjustment id="82" franchise_id="0002" amount="2.00" description="Dropped R. Matthews and Ellington in-season" timestamp="1482422888" />
+  <salaryAdjustment id="83" franchise_id="0002" amount="-93.00" description="Removed 2016 DCH penalties" timestamp="1482898872" />
+  <salaryAdjustment id="84" franchise_id="0003" amount="2.00" description="kept of Mendenhall's salary after trade" timestamp="1371151797" />
+  <salaryAdjustment id="85" franchise_id="0003" amount="12.00" description="Drop Tebow, Hillis, Hill, Kendricks before Auction" timestamp="1376963356" />
+  <salaryAdjustment id="86" franchise_id="0003" amount="6.00" description="Dropped Rice in-season, $11 Guaranteed" timestamp="1383659905" />
+  <salaryAdjustment id="87" franchise_id="0003" amount="1.00" description="Dropped Boyles in-season.  $1 locked but on IR" timestamp="1383748535" />
+  <salaryAdjustment id="88" franchise_id="0003" amount="7.00" description="drop gates ($5G) and d. williams ($7G) in-season" timestamp="1384401580" />
+  <salaryAdjustment id="89" franchise_id="0003" amount="-28.00" description="end of 2013 year" timestamp="1387949433" />
+  <salaryAdjustment id="9" franchise_id="0001" amount="1.00" description="Dropped D. Brown in-season" timestamp="1410094250" />
+  <salaryAdjustment id="90" franchise_id="0003" amount="5.00" description="Dropped S. Johnson before Auction" timestamp="1408327001" />
+  <salaryAdjustment id="91" franchise_id="0003" amount="11.00" description="8 kept of Bryant and 3 of E Manning in trade" timestamp="1415803134" />
+  <salaryAdjustment id="92" franchise_id="0003" amount="14.00" description="Dropped R. Bush in-season" timestamp="1415835121" />
+  <salaryAdjustment id="93" franchise_id="0003" amount="8.00" description="Ellington dropped after deadline; $8 cap hit in 2014, $8 cap hit in 2015" timestamp="1418307359" />
+  <salaryAdjustment id="94" franchise_id="0003" amount="-38.00" description="End of 2014 Season" timestamp="1419441658" />
+  <salaryAdjustment id="95" franchise_id="0003" amount="8.00" description="2014 Player (Ellington, $32G) dropped after deadline" timestamp="1419441906" />
+  <salaryAdjustment id="96" franchise_id="0003" amount="9.00" description="Dropped Britt and C. Michael in off-season" timestamp="1439730262" />
+  <salaryAdjustment id="97" franchise_id="0003" amount="6.00" description="Dropped T. Smith in-season" timestamp="1446123524" />
+  <salaryAdjustment id="98" franchise_id="0003" amount="8.00" description="Kept of Abdullah in trade" timestamp="1447822882" />
+  <salaryAdjustment id="99" franchise_id="0003" amount="13.00" description="Dropped Anderson in-season" timestamp="1447997124" />
+</salaryAdjustments>

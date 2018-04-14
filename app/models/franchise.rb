@@ -2,7 +2,7 @@ class Franchise < ApplicationRecord
 
   self.primary_key = "franchise_id"
 
-  attr_accessor :contracts, :league
+  attr_accessor :contracts, :league, :adjustments
 
   def active_roster
     contracts.select{ |p| p.roster_status == "ROSTER" }
@@ -20,5 +20,11 @@ class Franchise < ApplicationRecord
     selected_contracts = roster ? self.send(roster) : self.contracts
     salaries = selected_contracts.map { |p| p.salary }
     salaries.inject(:+) 
+  end
+ 
+  def total_adjustments
+    return 0 if adjustments.empty?
+    adjustment_amounts = adjustments.map { |a| a.amount }
+    adjustment_amounts.inject(:+)
   end
 end

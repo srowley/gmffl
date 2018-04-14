@@ -3,7 +3,7 @@ require 'open-uri'
 class League
  include ActiveModel::Model
 
- attr_accessor :id, :roster_url, :franchises, :year, :players_url, :franchises_url
+ attr_accessor :id, :roster_url, :franchises, :year, :players_url, :franchises_url, :adjustments_url
 
   def initialize(id = nil, year = nil)
     self.id = id
@@ -11,11 +11,13 @@ class League
     self.roster_url = "http://www61.myfantasyleague.com/#{year}/export?TYPE=rosters&L=#{id}"
     self.players_url = "https://www70.myfantasyleague.com/#{year}/export?TYPE=players&DETAILS=&SINCE=&PLAYERS=&JSON=0"
     self.franchises_url = "https://www61.myfantasyleague.com/#{year}/export?TYPE=league&L=#{id}"
+    self.adjustments_url = "https://www61.myfantasyleague.com/#{year}/export?TYPE=salaryAdjustments&L=#{id}"
   end
 
   def import_contracts
     franchises = Franchise.all.to_a
     doc = Nokogiri::XML(open(roster_url))
+    adjustments_doc = Nokogiri::XML(open(adjustments_url))
     franchise_nodes = doc.xpath("//franchise")
 
     franchises.each do |f|
@@ -30,6 +32,14 @@ class League
                                     notes:                  p["contractInfo"],
                                     salary:                 p["salary"].to_i,
                                     franchise:              f)
+      end
+
+      adjustment_nodes = adjustments_doc.xpath("//salaryAdjustment[@franchise_id=#{f.franchise_id} and  @timestamp>1520013527]")
+      f.adjustments = []
+      adjustment_nodes.each do |a|
+        f.adjustments << Adjustment.new(amount:             a["amount"].to_i,
+                                        description:        a["description"],
+                                        franchise:          f) 
       end
     end
   end

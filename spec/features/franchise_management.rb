@@ -5,6 +5,7 @@ feature "Roster Management", type: :feature do
     league = League.new(42618, 2018)
     league.players_url = Rails.root.to_s + "/spec/fixtures/files/players.xml"
     league.franchises_url = Rails.root.to_s + "/spec/fixtures/files/franchises.xml"
+    league.adjustments_url = Rails.root.to_s + "/spec/fixtures/files/adjustments.xml"
     league.import_players
     league.import_franchises
   end
@@ -17,5 +18,6 @@ feature "Roster Management", type: :feature do
     expect(page).to have_css("td", text: "Taxi Squad")
     expect(page).to have_css("td", text: "104")
     expect(page).to have_css("td", text: "112")
+    expect(page).to have_css("td", text: "87")
   end
 end

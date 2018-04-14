@@ -8,6 +8,7 @@ describe Franchise do
     @ts_contract = Contract.new(player_id: 2, roster_status: "TAXI_SQUAD", contract_terms: "2G-2018")
     @franchisable_contract = Contract.new(player_id: 3, roster_status: "TAXI_SQUAD", contract_terms: "2G-2017")
     @franchise = Franchise.new(contracts: [@active_contract, @ts_contract, @franchisable_contract], league: @league)
+    @franchise.adjustments = []
   end
 
   describe "#active_roster" do
@@ -24,10 +25,28 @@ describe Franchise do
     end
   end
 
-  describe "franchisable" do
+  describe "#franchisable" do
     it "returns an array of franchisable contracts" do
       expect(@franchise.pending_franchise_tag.length).to eq(1)
       expect(@franchise.pending_franchise_tag[0].player_id).to eq(3)
+    end
+  end
+  
+  describe "#total_adjustments" do
+    context "when there are adjustments" do
+      before(:each) do
+        @adjustment_1 = Adjustment.new(franchise: @franchise, amount: 1)
+        @adjustment_2 = Adjustment.new(franchise: @franchise, amount: 2)
+        @franchise.adjustments = [@adjustment_1, @adjustment_2]
+      end
+      it "returns the sum of the adjustments" do
+        expect(@franchise.total_adjustments).to eq(3)
+      end
+    end
+    context "when there are no adjustments" do
+       it "returns zero" do
+         expect(@franchise.total_adjustments).to eq(0)
+       end
     end
   end
 end 
