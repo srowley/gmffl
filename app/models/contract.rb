@@ -29,7 +29,7 @@ class Contract
   end
 
   def holdout_eligible?
-     !(rookie_contract? || grandfathered_contract?) && contract_end > franchise.league.year
+     top_player? && !(rookie_contract? || grandfathered_contract?) && contract_end > franchise.league.year
   end
 
   def contract_years_remaining
@@ -67,6 +67,12 @@ class Contract
 
   def grandfathered_contract?
     @contract_terms.include? "*"
+  end
+
+  def top_player?
+    thresholds = { QB: 12, RB: 24, WR: 36, TE: 12 }
+    return false unless stats.rank
+    stats.rank <= thresholds[stats.position.to_sym]
   end
 
   def contract_end

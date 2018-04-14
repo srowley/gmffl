@@ -5,6 +5,9 @@ describe Contract do
     @league = League.new(42618, 2018)
     @franchise = Franchise.new(league: @league)
     @contract= Contract.new(franchise: @franchise)
+    good_player = Player.create(player_id: 1)
+    good_player_stats = Stat.create(player_id: 1, rank: 4, position: "QB")
+    @contract.player_id = 1
   end
 
   context "will have finished his second contract year" do
@@ -48,9 +51,25 @@ describe Contract do
       @contract.contract_terms = "3L-2020"
     end
 
-    describe "#holdout_eligible?" do
-      it "returns true" do
-        expect(@contract.holdout_eligible?).to be true
+    context "if met performance threshold last year" do
+      describe "#holdout_eligible?" do
+        it "returns true" do
+          expect(@contract.holdout_eligible?).to be true
+        end
+      end
+    end
+
+    context "if did not meet performance threshold last year" do
+      before(:each) do
+        bad_player = Player.create(player_id: 2)
+        bad_player_stats = Stat.create(player_id: 2, rank: 16, position: "QB")
+        @contract.player_id = 2
+      end
+
+      describe "#holdout_eligible?" do
+        it "returns false" do
+          expect(@contract.holdout_eligible?).to be false 
+        end
       end
     end
   end
@@ -143,14 +162,9 @@ describe Contract do
   end
   
   describe "#stats" do
-    before(:each) do
-     @contract.player_id = 1
-     @stat = Stat.create(player_id: 1, score: 50, position: "WR", rank: 3)
-    end
-    
     it "returns the score and rank for a given player" do
-      expect(@contract.stats.rank).to eq(3)
-      expect(@contract.stats.position).to eq("WR") 
+      expect(@contract.stats.rank).to eq(4)
+      expect(@contract.stats.position).to eq("QB") 
     end
   end
 end
