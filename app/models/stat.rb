@@ -3,6 +3,8 @@ require 'nokogiri'
 
 class Stat < ApplicationRecord
 
+  belongs_to :player
+
   def self.import(league)
     ["QB", "RB", "WR", "TE"].each do |position|
       url = "http://www61.myfantasyleague.com/#{league.year}/top?L=#{league.id}&SEARCHTYPE=BASIC&COUNT=100&YEAR=#{league.year-1}" +
@@ -26,7 +28,4 @@ class Stat < ApplicationRecord
     end
   end
   
-  def player
-   player_id
-  end
 end

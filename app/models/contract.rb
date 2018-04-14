@@ -25,7 +25,7 @@ class Contract
   end
 
   def stats
-    Stat.where(player_id: player_id).first ? Stat.where(player_id: player_id).first : Stat.new
+    player.stats.first ? player.stats.first : Stat.new
   end
 
   def holdout_eligible?
