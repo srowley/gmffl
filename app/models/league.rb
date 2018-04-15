@@ -32,17 +32,6 @@ class League
     end
   end
 
-  def import_adjustments
-    Adjustment.delete_all
-    doc = Nokogiri::XML(open(adjustments_url))
-    adjustment_nodes = doc.xpath("//salaryAdjustment[@timestamp>1520013527]")
-    adjustment_nodes.each do |a|
-      Adjustment.create(amount:             a["amount"].to_i,
-                        description:        a["description"],
-                        franchise_id:       a["franchise_id"]) 
-      end
-  end
-  
   def import_players
     Player.delete_all
     doc = Nokogiri::XML(open(players_url))
