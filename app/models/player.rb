@@ -14,4 +14,19 @@ class Player < ApplicationRecord
     end
     Player.import player_objects
   end
+
+  def holdout_score(year)
+   stats.where(year: year, week: [1..16]).map { |s| s.score }.sum
+  end
+  
+  def self.ranks(year, position)
+    Stat.where(year: year, week: [1..16]).joins(:player).where("players.position = ?", position).group(:player_id).sum(:score).sort_by{|k,v| v}.reverse
+  end
+
+  def holdout_rank(year)
+    #need to handle when this returns nil because player didn't play last year
+    ranks = Player.ranks(year, position)
+    return 9999 unless ranks.flatten.include?(player_id)
+    ranks.index {|s| s[0] == player_id} + 1
+  end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180415030052) do
+ActiveRecord::Schema.define(version: 20180415142513) do
 
   create_table "adjustments", id: false, force: :cascade do |t|
     t.integer "amount"
@@ -44,12 +44,11 @@ ActiveRecord::Schema.define(version: 20180415030052) do
 
   create_table "stats", force: :cascade do |t|
     t.integer "score"
-    t.string "position"
     t.integer "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "rank"
     t.integer "year"
+    t.integer "week"
     t.index ["player_id"], name: "index_stats_on_player_id"
   end
 

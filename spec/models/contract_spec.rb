@@ -3,11 +3,10 @@ require 'rails_helper'
 describe Contract do
   before(:each) do
     @league = League.new(42618, 2018)
-    @franchise = Franchise.new(league: @league)
-    @contract= Contract.new(franchise: @franchise)
-    good_player = Player.create(player_id: 1)
-    good_player_stats = Stat.create(player_id: 1, rank: 4, position: "QB")
-    @contract.player_id = 1
+    @franchise = Franchise.create(league: @league, franchise_id: "0001")
+    @good_player = Player.create(position: "QB", player_id: 1)
+    allow(@good_player).to receive(:holdout_rank).and_return(2)
+    @contract = Contract.create(franchise: @franchise, player: @good_player)
   end
 
   describe "::import_xml" do
@@ -74,8 +73,8 @@ describe Contract do
 
     context "if did not meet performance threshold last year" do
       before(:each) do
-        bad_player = Player.create(player_id: 2)
-        bad_player_stats = Stat.create(player_id: 2, rank: 16, position: "QB")
+        bad_player = Player.create(player_id: 2, position: "QB")
+        allow(bad_player).to receive(:holdout_rank).and_return(30)
         @contract.player_id = 2
       end
 
@@ -171,13 +170,6 @@ describe Contract do
       it "returns a hash of salaries for each contract year" do
         expect(@contract.salary_schedule).to include({ 2018 => 34, 2019 => 36, 2020 => 38, 2021 => 40 })
       end
-    end
-  end
-  
-  describe "#stats" do
-    it "returns the score and rank for a given player" do
-      expect(@contract.stats.rank).to eq(4)
-      expect(@contract.stats.position).to eq("QB") 
     end
   end
 end
