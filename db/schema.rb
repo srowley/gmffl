@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20180415030052) do
 
-  create_table "adjustments", force: :cascade do |t|
+  create_table "adjustments", id: false, force: :cascade do |t|
     t.integer "amount"
     t.string "description"
     t.string "franchise_id"

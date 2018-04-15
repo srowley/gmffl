@@ -4,7 +4,7 @@ class FranchisesController < ApplicationController
     year = params[:year].to_i
     league = League.new(league_id, year)
     league.import_contracts
-    league.import_adjustments
+    Adjustment.import_xml(league)
     @franchises = Franchise.all.to_a
     @franchises.each { |f| f.league = league }
     @franchises
