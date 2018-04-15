@@ -1,6 +1,3 @@
-require 'open-uri'
-require 'nokogiri'
-
 class Stat < ApplicationRecord
 
   belongs_to :player
@@ -9,10 +6,8 @@ class Stat < ApplicationRecord
     ["QB", "RB", "WR", "TE"].each do |position|
       url = "http://www61.myfantasyleague.com/#{league.year}/top?L=#{league.id}&SEARCHTYPE=BASIC&COUNT=100&YEAR=#{league.year-1}" +
              "&START_WEEK=1&END_WEEK=16&CATEGORY=overall&POSITION=#{position}&DISPLAY=points&TEAM=*"
-      puts url
       doc = Nokogiri::HTML(open(url))
       rows = doc.xpath("//div[@id='withmenus']//table/tbody/tr")
-      puts rows.length
       stats = {}
     
       rows.each do |r|
