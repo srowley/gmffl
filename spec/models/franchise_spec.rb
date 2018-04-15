@@ -14,6 +14,14 @@ describe Franchise do
     @player3 = Player.create(player_id: 3) 
   end
 
+  describe "::import_xml" do
+    it "imports all the franchise records" do
+      @league.franchises_url = "#{Rails.root}/spec/fixtures/files/franchises.xml"
+      Franchise.import_xml(@league)
+      expect(Franchise.count).to eq(12)
+    end
+  end
+
   describe "#active_roster" do
     it "returns array of active roster contracts" do
       expect(@franchise.active_roster.length).to eq(1)

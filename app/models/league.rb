@@ -51,13 +51,4 @@ class League
       Player.create(player_id: p["id"], name: p["name"], position: p["position"]) if ["QB", "RB", "WR", "TE"].include? p["position"]
     end
   end
-
-  def import_franchises
-    Franchise.delete_all
-    doc = Nokogiri::XML(open(franchises_url))
-    franchise_nodes = doc.xpath("//franchise")
-    franchise_nodes.each do |f| 
-      Franchise.create(franchise_id: f["id"], name: f["name"])
-    end
-  end
 end

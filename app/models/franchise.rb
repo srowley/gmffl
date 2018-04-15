@@ -7,6 +7,17 @@ class Franchise < ApplicationRecord
 
   attr_accessor :league
 
+  def self.import_xml(league)
+    self.delete_all
+    doc = Nokogiri::XML(open(league.franchises_url))
+    franchise_nodes = doc.xpath("//franchise")
+    franchise_records = [] 
+    franchise_nodes.each do |f|
+      franchise_records << self.new(franchise_id: f["id"], name: f["name"])
+    end
+    self.import franchise_records 
+  end
+
   def active_roster(position = nil)
     all = contracts.select{ |p| p.roster_status == "ROSTER" }
     all = all.sort_by { |c| c.player.name }

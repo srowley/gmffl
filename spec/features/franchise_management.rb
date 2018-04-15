@@ -7,7 +7,7 @@ feature "Roster Management", type: :feature do
     league.franchises_url = Rails.root.to_s + "/spec/fixtures/files/franchises.xml"
     league.adjustments_url = Rails.root.to_s + "/spec/fixtures/files/adjustments.xml"
     league.import_players
-    league.import_franchises
+    Franchise.import_xml(league)
   end
 
   scenario "User views league rosters" do

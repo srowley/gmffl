@@ -7,7 +7,7 @@ describe League do
       #would be great to raise error on import fail due to validations
       league = League.new
       league.franchises_url = "#{Rails.root}/spec/fixtures/files/franchises.xml"
-      league.import_franchises
+      Franchise.import_xml(league)
       league.players_url = "#{Rails.root}/spec/fixtures/files/players.xml"
       league.import_players
       league.roster_url = "#{Rails.root}/spec/fixtures/files/rosters.xml"

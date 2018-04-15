@@ -11,6 +11,7 @@ gem 'jquery-rails',            '4.3.1'
 gem 'turbolinks',              '5.0.1'
 gem 'jbuilder',                '2.7.0'
 gem 'minitest',                '5.10.3'
+gem 'activerecord-import',     '0.22.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
