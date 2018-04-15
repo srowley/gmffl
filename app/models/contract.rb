@@ -3,6 +3,26 @@ class Contract < ApplicationRecord
   belongs_to :franchise
   belongs_to :player
 
+  def self.import_xml(league)
+    Contract.delete_all
+    doc = Nokogiri::XML(open(league.roster_url))
+    contract_objects = []
+    franchise_nodes = doc.xpath("//franchise")
+    franchise_nodes.each do |f|
+      contracts = f.xpath("./player")
+      contracts.each do |c|
+        contract_objects << Contract.new(player_id:              c["id"].to_i,
+                                         contract_terms:         c["contractStatus"],
+                                         roster_status:          c["status"],
+                                         acquired_cost:          c["contractYear"].to_i,
+                                         notes:                  c["contractInfo"],
+                                         salary:                 c["salary"].to_i,
+                                         franchise_id:           f["id"])
+      end
+    end
+    Contract.import contract_objects
+  end
+
   def dead_cap
     return 0 if roster_status == "TAXI_SQUAD"
     if contract_type == "Locked"

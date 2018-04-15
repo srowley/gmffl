@@ -13,31 +13,4 @@ class League
     self.franchises_url = "https://www61.myfantasyleague.com/#{year}/export?TYPE=league&L=#{id}"
     self.adjustments_url = "https://www61.myfantasyleague.com/#{year}/export?TYPE=salaryAdjustments&L=#{id}"
   end
-
-  def import_contracts
-    Contract.delete_all
-    doc = Nokogiri::XML(open(roster_url))
-    franchise_nodes = doc.xpath("//franchise")
-    franchise_nodes.each do |f|
-      contracts = f.xpath("./player")
-      contracts.each do |c|
-        Contract.create(player_id:              c["id"].to_i,
-                        contract_terms:         c["contractStatus"],
-                        roster_status:          c["status"],
-                        acquired_cost:          c["contractYear"].to_i,
-                        notes:                  c["contractInfo"],
-                        salary:                 c["salary"].to_i,
-                        franchise_id:           f["id"])
-      end
-    end
-  end
-
-  def import_players
-    Player.delete_all
-    doc = Nokogiri::XML(open(players_url))
-    player_nodes = doc.xpath("//player")
-    player_nodes.each do |p| 
-      Player.create(player_id: p["id"], name: p["name"], position: p["position"]) if ["QB", "RB", "WR", "TE"].include? p["position"]
-    end
-  end
 end

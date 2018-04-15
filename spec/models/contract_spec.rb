@@ -10,6 +10,19 @@ describe Contract do
     @contract.player_id = 1
   end
 
+  describe "::import_xml" do
+    it "imports MFL roster data" do
+      #would be great to raise error on import fail due to validations
+      @league.franchises_url = "#{Rails.root}/spec/fixtures/files/franchises.xml"
+      Franchise.import_xml(@league)
+      @league.players_url = "#{Rails.root}/spec/fixtures/files/players.xml"
+      Player.import_xml(@league)
+      @league.roster_url = "#{Rails.root}/spec/fixtures/files/rosters.xml"
+      Contract.import_xml(@league)
+      expect(Contract.count).to eq(233)
+    end
+  end
+
   context "will have finished his second contract year" do
     before(:each) do
       @contract.contract_terms = "3L-2019"
