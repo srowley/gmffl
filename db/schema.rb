@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180414025505) do
+ActiveRecord::Schema.define(version: 20180415030052) do
+
+  create_table "adjustments", force: :cascade do |t|
+    t.integer "amount"
+    t.string "description"
+    t.string "franchise_id"
+  end
+
+  create_table "contracts", id: false, force: :cascade do |t|
+    t.integer "player_id"
+    t.string "contract_terms"
+    t.string "roster_status"
+    t.integer "acquired_cost"
+    t.string "notes"
+    t.integer "salary"
+    t.string "franchise_id"
+  end
 
   create_table "franchises", id: false, force: :cascade do |t|
     t.string "franchise_id", null: false

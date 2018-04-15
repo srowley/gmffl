@@ -2,7 +2,10 @@ class Franchise < ApplicationRecord
 
   self.primary_key = "franchise_id"
 
-  attr_accessor :contracts, :league, :adjustments
+  has_many :adjustments
+  has_many :contracts
+
+  attr_accessor :league
 
   def active_roster(position = nil)
     all = contracts.select{ |p| p.roster_status == "ROSTER" }

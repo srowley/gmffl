@@ -1,6 +1,4 @@
-class Adjustment
-  include ActiveModel::Model
+class Adjustment < ApplicationRecord
 
-  attr_accessor :franchise, :amount, :description
-
+  belongs_to :franchise
 end
