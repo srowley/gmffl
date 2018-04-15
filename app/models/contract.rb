@@ -41,10 +41,6 @@ class Contract < ApplicationRecord
     end
   end
 
-  def stats
-    player.stats.first ? player.stats.first : Stat.new
-  end
-
   def holdout_eligible?
      top_player? && !(rookie_contract? || grandfathered_contract?) && contract_end > franchise.league.year
   end
