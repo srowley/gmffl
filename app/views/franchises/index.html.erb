@@ -4,8 +4,9 @@ $(function () {
 })
 </script>
 <% @franchises.each_with_index do |franchise, index| %>
-<%= "<div class=\"row\">".html_safe if index.even? %>
-<div class="col-md-6">
+<%-# "<div class=\"row\">".html_safe if index.even?-%>
+<div class="row">
+<div class="col-md-12">
   <table class="table table-condensed table-hover">
     <caption><h3><%= franchise.name %></h3></caption>
     <thead class="thead-dark">
@@ -69,5 +70,6 @@ $(function () {
     </tbody>
   </table>
 </div>
-<%= "</div>".html_safe if index.odd? %>
+</div>
+<%-# "</div>".html_safe if index.odd?-%>
 <% end %>

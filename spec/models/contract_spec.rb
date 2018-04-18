@@ -117,15 +117,21 @@ describe Contract do
       end
     end
 
-    describe "#contract_type" do
+    describe "#type" do
       it "parses correctly" do
-        expect(@contract.contract_type).to eq("Locked")
+        expect(@contract.type).to eq("Locked")
       end
     end
 
-    describe "#contract_end" do
+    describe "#start_year" do
       it "parses correctly" do
-        expect(@contract.contract_end).to eq(2021)
+        expect(@contract.start_year).to eq(2017)
+      end
+    end
+
+    describe "#last_year" do
+      it "parses correctly" do
+        expect(@contract.last_year).to eq(2021)
       end
     end
 
@@ -140,7 +146,14 @@ describe Contract do
 
     before(:each) do
       @contract.contract_terms = "5G-2021"
+      @contract.acquired_cost = 32
       @contract.salary =  34
+    end
+
+    describe "#guaranteed?" do
+      it "returns true" do
+        expect(@contract.guaranteed?).to be true
+      end
     end
 
     describe "#dead_cap" do
@@ -154,15 +167,21 @@ describe Contract do
       end
     end
 
-    describe "#contract_type" do
+    describe "#type" do
       it "parses correctly" do
-        expect(@contract.contract_type).to eq("Guaranteed")
+        expect(@contract.type).to eq("Guaranteed")
       end
     end
 
-    describe "#contract_end" do
+    describe "#start_year" do
       it "parses correctly" do
-        expect(@contract.contract_end).to eq(2021)
+        expect(@contract.start_year).to eq(2017)
+      end
+    end
+
+    describe "#last_year" do
+      it "parses correctly" do
+        expect(@contract.last_year).to eq(2021)
       end
     end
    

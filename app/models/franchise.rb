@@ -25,13 +25,13 @@ class Franchise < ApplicationRecord
   end
 
   def taxi_squad(position = nil)
-    all = contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end != (league.year - 1) }
+    all = contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.last_year != (league.year - 1) }
     all = all.sort_by { |c| c.player.name }
     !position ? all : all.select{|c| c.player.position == position }
   end
 
   def pending_franchise_tag(position = nil) 
-    all = contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.contract_end == league.year - 1}
+    all = contracts.select{ |p| p.roster_status == "TAXI_SQUAD" && p.last_year == league.year - 1}
     all = all.sort_by { |c| c.player.name }
     !position ? all : all.select{|c| c.player.position == position }
   end

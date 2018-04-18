@@ -25,15 +25,15 @@ class Contract < ApplicationRecord
 
   def dead_cap
     return 0 if roster_status == "TAXI_SQUAD"
-    if contract_type == "Locked"
+    if type == "Locked"
       current_year_hit = (salary/2.to_f).ceil
-      future_years_hit = (contract_years_remaining * salary / 2.to_f).ceil
+      future_years_hit = (years_remaining * salary / 2.to_f).ceil
       current_year_hit + future_years_hit
     else
-      contract_type == "Guaranteed"
+      type == "Guaranteed"
       current_salary = salary
       cap_hit = current_salary.to_f / 2
-      contract_years_remaining.times do |n|
+      years_remaining.times do |n|
         salary = (current_salary * 1.05).ceil
         cap_hit += (current_salary / 10.0).ceil
       end
@@ -41,15 +41,19 @@ class Contract < ApplicationRecord
     end
   end
 
+  def guaranteed?
+    type == "Guaranteed"
+  end
+
   def holdout_eligible?
-     top_player? && !(rookie_contract? || grandfathered_contract?) && contract_end > franchise.league.year
+     top_player? && !(rookie_contract? || grandfathered_contract?) && last_year > franchise.league.year
   end
 
-  def contract_years_remaining
-    contract_end - franchise.league.year
+  def years_remaining
+    last_year - franchise.league.year
   end
 
-  def contract_type
+  def type
     if contract_terms[1] == "L"
       "Locked"
     else
@@ -58,20 +62,7 @@ class Contract < ApplicationRecord
   end
 
   def salary_schedule
-    schedule =  {}
-    schedule[franchise.league.year] = salary
-    if contract_type == "Guaranteed"
-      contract_years_remaining.times do |n|
-        year = franchise.league.year + n 
-        schedule[year + 1] = (schedule[year] * 1.05).ceil
-      end
-    else
-      contract_years_remaining.times do |n|
-        year = franchise.league.year + n 
-        schedule[year + 1] = salary 
-      end
-    end
-    schedule
+    SalaryCalculator.new(self).call
   end
   
   def rookie_contract?
@@ -87,15 +78,15 @@ class Contract < ApplicationRecord
     player.holdout_rank(franchise.league.year - 1) <= thresholds[player.position.to_sym]
   end
 
-  def contract_end
+  def last_year
     contract_terms[3..6].to_i
   end
 
-  def contract_length
+  def years_long 
     contract_terms[0].to_i
   end
 
-  def contract_start
-    contract_end - contract_length + 1
+  def start_year
+    last_year - years_long + 1
   end
 end
