@@ -27,18 +27,6 @@ class Contract < ApplicationRecord
     Contract.import contract_objects
   end
 
-  def deferrals 
-    events.select { |e| e.type == "Deferred" }
-  end
-    
-  def advances
-    events.select { |e| e.type == "Advanced" }
-  end
-    
-  def transfers 
-    events.select { |e| e.type == "Transferred" }
-  end
-
   def dead_cap
     return 0 if roster_status == "TAXI_SQUAD"
     if type == "Locked"
