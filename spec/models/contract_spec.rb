@@ -204,24 +204,6 @@ describe Contract do
         expect(@contract.events).to be_empty
       end
     end
-
-    describe "#transfers" do
-      it "is empty" do
-        expect(@contract.transfers).to be_empty
-      end
-    end
-
-    describe "#advances" do
-      it "is empty" do
-        expect(@contract.advances).to be_empty
-      end
-    end
-
-    describe "#deferrals" do
-      it "is empty" do
-        expect(@contract.deferrals).to be_empty
-      end
-    end
   end
 
   context "with a complicated contract" do
@@ -238,24 +220,6 @@ describe Contract do
       it "has a properly populated event object" do
         expect(@complicated_contract.events[0].type).to eq("Deferred")
         expect(@complicated_contract.events[1].type).to eq("Advanced")
-      end
-    end
-
-    describe "#advances" do
-      it "has one element" do
-        expect(@complicated_contract.advances.length).to eq(1) 
-      end
-    end
-
-    describe "#deferrals" do
-      it "has one element" do
-        expect(@complicated_contract.deferrals.length).to eq(1) 
-      end
-    end
-
-    describe "#transfers" do
-      it "is empty" do
-        expect(@complicated_contract.transfers).to be_empty
       end
     end
   end
