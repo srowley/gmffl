@@ -82,7 +82,6 @@ describe SalaryCalculator do
       end
     end
 
-
     context "Dez Bryant" do
       it "returns the correct salary schedule" do
         contract_terms = "6L-2020"
@@ -94,15 +93,12 @@ describe SalaryCalculator do
     end
 
     context "Tom Brady" do
-      before(:each) do
-      end
-
       it "returns the correct salary schedule" do
         contract_terms = "3L-2018E"
         acquired_cost = "27"
-        notes = "2016: Extended @$27 through 2018; 2016: advanced $20, 2017-2018 salary = $17; 2017: $4 deferred; 2018: $5 deferral penalty [Advanced:2016:20;Deferred:2017:4]"
+        notes = "2016: Extended @$27 through 2018; 2016: advanced $20, 2017-2018 salary = $17; 2017: $4 deferred; 2018: $5 deferral penalty [Advanced:2016:20;Deferred:2017:4;Extended:2016:2G-2016]"
         @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
-        expect(SalaryCalculator.new(@contract).call).to eq({ 2016 => 25, 2017 => 27, 2018 => 22 })
+        expect(SalaryCalculator.new(@contract).call).to eq({ 2015 => 25, 2016 => 47, 2017 => 13, 2018 => 22 })
       end
     end
 

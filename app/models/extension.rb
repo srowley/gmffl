@@ -24,6 +24,7 @@ class Extension
 			     contract_terms: original_terms.remove("E"),
                              notes: contract.notes.remove("Extended:#{year}:#{original_terms}"))
     original.franchise.league = contract.franchise.league
+    original.events.delete_if {|e| e.year >= original.last_year }
     original
   end
 end
