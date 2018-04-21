@@ -150,6 +150,12 @@ describe Contract do
       @contract.salary =  34
     end
 
+    describe "#legacy_guaranteed?" do
+      it "returns true" do
+        expect(@contract.legacy_guaranteed?).to be true
+      end
+    end
+
     describe "#guaranteed?" do
       it "returns true" do
         expect(@contract.guaranteed?).to be true
@@ -191,5 +197,66 @@ describe Contract do
       end
     end
   end
-end
 
+  context "with a simple contract" do
+    describe "#events" do
+      it "is empty" do
+        expect(@contract.events).to be_empty
+      end
+    end
+
+    describe "#transfers" do
+      it "is empty" do
+        expect(@contract.transfers).to be_empty
+      end
+    end
+
+    describe "#advances" do
+      it "is empty" do
+        expect(@contract.advances).to be_empty
+      end
+    end
+
+    describe "#deferrals" do
+      it "is empty" do
+        expect(@contract.deferrals).to be_empty
+      end
+    end
+  end
+
+  context "with a complicated contract" do
+    before(:each) do
+      notes = "2017: $8 deferred; 2018 contract = $27 [Deferred:2017:8;Advanced:2016:10]"
+      @complicated_contract = Contract.create(franchise: @franchise, player: @good_player, notes: notes)
+    end
+   
+    describe "#events" do
+      it "has two elements" do
+        expect(@complicated_contract.events.length).to eq(2)
+      end
+
+      it "has a properly populated event object" do
+        expect(@complicated_contract.events[0].type).to eq("Deferred")
+        expect(@complicated_contract.events[1].type).to eq("Advanced")
+      end
+    end
+
+    describe "#advances" do
+      it "has one element" do
+        expect(@complicated_contract.advances.length).to eq(1) 
+      end
+    end
+
+    describe "#deferrals" do
+      it "has one element" do
+        expect(@complicated_contract.deferrals.length).to eq(1) 
+      end
+    end
+
+    describe "#transfers" do
+      it "is empty" do
+        expect(@complicated_contract.transfers).to be_empty
+      end
+    end
+  end
+end

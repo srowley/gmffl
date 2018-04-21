@@ -2,6 +2,10 @@ class Contract < ApplicationRecord
 
   belongs_to :franchise
   belongs_to :player
+  
+  attr_accessor :events
+
+  after_initialize :parse_notes
 
   def self.import_xml(league)
     Contract.delete_all
@@ -23,6 +27,18 @@ class Contract < ApplicationRecord
     Contract.import contract_objects
   end
 
+  def deferrals 
+    events.select { |e| e.type == "Deferred" }
+  end
+    
+  def advances
+    events.select { |e| e.type == "Advanced" }
+  end
+    
+  def transfers 
+    events.select { |e| e.type == "Transferred" }
+  end
+
   def dead_cap
     return 0 if roster_status == "TAXI_SQUAD"
     if type == "Locked"
@@ -39,6 +55,10 @@ class Contract < ApplicationRecord
       end
       cap_hit.to_i
     end
+  end
+
+  def legacy_guaranteed?
+    guaranteed? && start_year < 2018
   end
 
   def guaranteed?
@@ -88,5 +108,20 @@ class Contract < ApplicationRecord
 
   def start_year
     last_year - years_long + 1
+  end
+
+  private
+
+  def parse_notes
+    @events = []
+    events_match = /\[.+\]/.match(notes)
+    if events_match
+      events_list = events_match.to_s[1..-2].split(";")
+      events_list.each do |e|
+        args = e.split(":")
+        @events << Event.new(args[0], args[1].to_i, args[2].to_i, self)
+      end
+    end
+    @events
   end
 end
