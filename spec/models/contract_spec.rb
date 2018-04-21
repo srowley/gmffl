@@ -23,6 +23,10 @@ describe Contract do
   end
 
   context "is not extended" do
+    before(:each) do
+      @contract.contract_terms = "3L-2018"
+    end
+
     describe "#extended" do
       it "returns false" do
         expect(@contract.extended?).to be false
@@ -32,7 +36,7 @@ describe Contract do
 
   context "is extended" do
     before(:each) do
-      @contract.notes = "Fooobar. [Extended:2016:2G-2017]"
+      @contract.contract_terms = "3L-2018E"
     end
 
     describe "#extended" do

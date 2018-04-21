@@ -5,29 +5,16 @@ class SalaryCalculator
   end
 
   def call
-     salary_schedule
+     if @contract.extended?
+       SalaryCalculator.new(contract.extension.original_contract).call.merge(SalaryCalculator.new(contract.extension.extended_contract).call)
+     else
+       salary_schedule
+     end
   end
 
   private
 
   attr_reader :contract
-
-#  def schedule_for_extended_contract
-#    original_contract = @contract
-#    original_contract_terms = ....get from notes....
-#    original_contract.contract_terms = original_contract_terms
-#    #remove extension event
-#    original_contract_schedule = original_contract.salary_schedule
-#
-#    extension = @contract
-#    extension_length = @contract.last_year - original_contract.last_year
-#    extension.contract_terms = extension_length + extension_type[0] + "-" + original_contract.last_year
-#    extension.acquired_cost = ...get from original contract...
-#    #remove extension event
-#    extension_schedule = extension.salary_schedule
-#    
-#    original_contract_schedule.merge(extension_schedule)
-#  end
 
   def base_salary
     schedule = {}
@@ -38,11 +25,11 @@ class SalaryCalculator
       end
     else
       schedue = { contract.start_year => contract.acquired_cost }
-      (league_year..contract.last_year).each do |y|
+      (contract.start_year..contract.last_year).each do |y|
         schedule[y] = contract.acquired_cost
       end
     end
-    schedule.delete_if {|k,v| k < league_year || k > contract.last_year }
+    schedule.delete_if {|k,v| k > contract.last_year }
   end    
 
   def salary_schedule

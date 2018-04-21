@@ -16,6 +16,7 @@ class Franchise < ApplicationRecord
       franchise_records << self.new(franchise_id: f["id"], name: f["name"])
     end
     self.import franchise_records 
+#    Franchise.all.each { |f| f.league = league }
   end
 
   def active_roster(position = nil)

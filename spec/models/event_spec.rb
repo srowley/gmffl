@@ -16,19 +16,19 @@ describe Event do
       end
 
       it "provides a hash of adjustments" do
-        expect(@event.adjustment_schedule).to eq({ 2018 => 10 })
+        expect(@event.adjustment_schedule).to eq({ 2017 => -8, 2018 => 10 })
       end
     end
 
     context "with an advance" do
       before(:each) do
         notes = "2017: $13 advanced; [Advanced:2017:13]"
-        contract = Contract.create(contract_terms: "4L-2021", franchise: @franchise, player: @player, notes: notes)
+        contract = Contract.create(contract_terms: "5L-2021", franchise: @franchise, player: @player, notes: notes)
         @event = contract.events[0]
       end
 
       it "provides a hash of adjustments" do
-        expect(@event.adjustment_schedule).to eq({ 2018 => -3, 2019 => -3, 2020 => -3, 2021 => -4 })
+        expect(@event.adjustment_schedule).to eq({ 2017 => 13, 2018 => -3, 2019 => -3, 2020 => -3, 2021 => -4 })
       end
     end
 

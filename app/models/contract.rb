@@ -3,7 +3,7 @@ class Contract < ApplicationRecord
   belongs_to :franchise
   belongs_to :player
   
-  attr_accessor :events
+  attr_accessor :events, :extension
 
   after_initialize :parse_notes
 
@@ -46,7 +46,7 @@ class Contract < ApplicationRecord
   end
 
   def extended?
-    /\[Extended/.match?(notes)
+    contract_terms.include? "E"
   end
 
   def guaranteed?
@@ -70,7 +70,7 @@ class Contract < ApplicationRecord
   end
 
   def salary_schedule
-    SalaryCalculator.new(self).call
+    trim_years(SalaryCalculator.new(self).call)
   end
   
   def rookie_contract?
@@ -107,9 +107,17 @@ class Contract < ApplicationRecord
       events_list = events_match.to_s[1..-2].split(";")
       events_list.each do |e|
         args = e.split(":")
-        @events << Event.new(args[0], args[1].to_i, args[2].to_i, self)
+        if args[0].include? "Extended"
+          @extension = Extension.new(args[1], args[2], self)
+        else
+          @events << Event.new(args[0], args[1].to_i, args[2].to_i, self)
+        end
       end
     end
-    @events
+  end
+
+  def trim_years(schedule)
+    schedule.delete_if {|k,v| k < franchise.league.year || k > last_year }
+    schedule
   end
 end
