@@ -115,5 +115,23 @@ describe SalaryCalculator do
         expect(SalaryCalculator.new(@contract).call).to eq({ 2018 => 20, 2019 => 15 })
       end
     end
+
+    context "Isaiah Crowell" do
+      it "returns the correct salary schedule" do
+        contract_terms = "6G-2019*"
+        acquired_cost = "1"
+        @contract = Contract.create(franchise: @franchise, player: @player, acquired_cost: acquired_cost, contract_terms: contract_terms)
+        expect(SalaryCalculator.new(@contract).call).to eq({ 2018 => 8, 2019 => 9 })
+      end
+    end
+
+    context "Jordy Nelson" do
+      it "returns the correct salary schedule" do
+        contract_terms = "4G-2018"
+        acquired_cost = "2"
+        @contract = Contract.create(franchise: @franchise, player: @player, acquired_cost: acquired_cost, contract_terms: contract_terms)
+        expect(SalaryCalculator.new(@contract).call).to eq({ 2018 => 6})
+      end
+    end
   end
 end

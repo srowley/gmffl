@@ -45,6 +45,10 @@ class Contract < ApplicationRecord
     end
   end
 
+  def extended?
+    /\[Extended/.match?(notes)
+  end
+
   def guaranteed?
     type == "Guaranteed"
   end

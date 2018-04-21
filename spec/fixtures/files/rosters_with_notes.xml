@@ -4,7 +4,7 @@
 <player id="12140" status="ROSTER" contractStatus="5L-2019R" contractYear="35" contractInfo="" salary="35.00"/>
 <player id="12154" status="ROSTER" contractStatus="6L-2020R" contractYear="9" contractInfo="" salary="9.00"/>
 <player id="11668" status="ROSTER" contractStatus="6G-2019*" contractYear="1" contractInfo="" salary="8"/>
-<player id="7393" status="ROSTER" contractStatus="3L-2018E" contractYear="3" contractInfo="2016: Extended from 2G-2016 ($3 initial) to 3L-2018 ($4/yr); 2017: Stashed; 2018: HOLDING OUT ($34)" salary="4.00"/>
+<player id="7393" status="ROSTER" contractStatus="3L-2018E" contractYear="3" contractInfo="2016: Extended from 2G-2016 ($3 initial) to 3L-2018 ($4/yr); 2017: Stashed; 2018: HOLDING OUT ($34) [Extended:2016:2G-2016]" salary="4.00"/>
 <player id="9118" status="ROSTER" contractStatus="4G-2018" contractYear="2" contractInfo="" salary="6"/>
 <player id="9902" status="ROSTER" contractStatus="5L-2020E" contractYear="35" contractInfo="2016: Extended for three years (originally 3L-2017) to 5L-2020; 2016: advanced $132, 2017-2020 salary = $2 [Advanced:2016:132]" salary="2.00"/>
 <player id="12680" status="ROSTER" contractStatus="3L-2019" contractYear="1" contractInfo="" salary="1"/>
