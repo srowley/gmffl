@@ -45,10 +45,6 @@ class Contract < ApplicationRecord
     end
   end
 
-  def legacy_guaranteed?
-    guaranteed? && start_year < 2018
-  end
-
   def guaranteed?
     type == "Guaranteed"
   end

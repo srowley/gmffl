@@ -150,12 +150,6 @@ describe Contract do
       @contract.salary =  34
     end
 
-    describe "#legacy_guaranteed?" do
-      it "returns true" do
-        expect(@contract.legacy_guaranteed?).to be true
-      end
-    end
-
     describe "#guaranteed?" do
       it "returns true" do
         expect(@contract.guaranteed?).to be true
