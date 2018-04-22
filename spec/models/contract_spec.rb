@@ -139,6 +139,14 @@ describe Contract do
         @contract.roster_status = "TAXI_SQUAD"
         expect(@contract.dead_cap).to eq(0)
       end
+
+      it "incorporates adjustments correctly" do
+        contract_terms = "6L-2020"
+        acquired_cost = "34"
+        notes = "2015: Grandfathered for contract extension; 2015: $27 advanced; 2016-2018 salary = 30, 2019-2020 salary = 29; 2017: 7 kept by Ephraim in trade; 2018: 8 kept by Ephraim in trade; 2019: 9 kept by Ephraim in trade; 2020: 10 kept by Ephraim in trade; 2018 (FUTURE DCH): $5 kept by Darren in trade [Advanced:2015:27;Transferred:2017:7;Transferred:2018:8;Transferred:2019:9;Transferred:2020:10;Transferred:2018:5]"
+        @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
+        expect(@contract.dead_cap).to eq(27)
+      end
     end
 
     describe "#type" do
@@ -182,7 +190,7 @@ describe Contract do
 
     describe "#dead_cap" do
       it "calculates dead cap correctly" do
-        expect(@contract.dead_cap).to eq(29)
+        expect(@contract.dead_cap).to eq(21)
       end
 
       it "returns zero if the player is on the taxi squad" do

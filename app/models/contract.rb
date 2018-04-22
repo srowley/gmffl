@@ -30,18 +30,9 @@ class Contract < ApplicationRecord
   def dead_cap
     return 0 if roster_status == "TAXI_SQUAD"
     if type == "Locked"
-      current_year_hit = (salary/2.to_f).ceil
-      future_years_hit = (years_remaining * salary / 2.to_f).ceil
-      current_year_hit + future_years_hit
+     dead_cap_calc(0.5, 0.5)
     else
-      type == "Guaranteed"
-      current_salary = salary
-      cap_hit = current_salary.to_f / 2
-      years_remaining.times do |n|
-        salary = (current_salary * 1.05).ceil
-        cap_hit += (current_salary / 10.0).ceil
-      end
-      cap_hit.to_i
+      dead_cap_calc(0.25, 0.1)
     end
   end
 
@@ -99,6 +90,15 @@ class Contract < ApplicationRecord
   end
 
   private
+
+  def dead_cap_calc(first_year_pct, future_years_pct)
+    salary_hash = salary_schedule
+    league_year = franchise.league.year
+    current_year_hit = (salary_hash[league_year]* first_year_pct).ceil
+    remaining_term = salary_hash.delete_if {|k,v| k == league_year }
+    remaining_hit = (remaining_term.values.sum * future_years_pct).ceil
+    current_year_hit + remaining_hit
+  end
 
   def parse_notes
     @events = []
