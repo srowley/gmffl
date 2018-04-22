@@ -11,6 +11,7 @@ feature "Roster Management", type: :feature do
   end
 
   scenario "User views league rosters" do
+    Capybara.reset_session!
     visit "/?league=42618&year=2018"
     expect(page).to have_text("Moonshiners")
     expect(page).to have_css("td", text: "Luck, Andrew")
