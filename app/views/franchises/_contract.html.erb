@@ -3,5 +3,5 @@
   <td class="text-nowrap"><%= contract.contract_terms %></td>
   <td class="text-center"><%= contract.acquired_cost%></td>
   <td class="text-center"><%= contract.holdout_eligible? ? "Yes" : "No" %></td>
-  <td class="text-center"><%= contract.dead_cap if contract.notes.empty? %></td>
+  <td class="text-center"><%= contract.dead_cap %></td>
   <td><small><%= contract.notes%></small></td>
