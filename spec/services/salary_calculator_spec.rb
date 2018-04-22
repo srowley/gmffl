@@ -131,6 +131,16 @@ describe SalaryCalculator do
       end
     end
 
+    context "Eli Manning" do
+      it "returns the correct salary schedule" do
+        contract_terms = "3L-2018E"
+        acquired_cost = "39"
+        notes = "2016: Extended from 2G-2016 ($39 initial) to 3L-2018 (2017 2018 salary = $41); 2018: $21 to be kept by Aaron in trade [Extended:2016:2G-2016;Transferred:2018:21]"
+        @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
+        expect(SalaryCalculator.new(@contract).call).to eq({ 2015 => 39, 2016 => 41, 2017 => 41, 2018 => 20 })
+      end
+    end
+
     context "Jordy Nelson" do
       it "returns the correct salary schedule" do
         contract_terms = "4G-2018"

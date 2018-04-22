@@ -6,7 +6,7 @@
 <player id="11668" status="ROSTER" contractStatus="6G-2019*" contractYear="1" contractInfo="" salary="8"/>
 <player id="7393" status="ROSTER" contractStatus="3L-2018E" contractYear="3" contractInfo="2016: Extended from 2G-2016 ($3 initial) to 3L-2018 ($4/yr); 2017: Stashed; 2018: HOLDING OUT ($34) [Extended:2016:2G-2016]" salary="4.00"/>
 <player id="9118" status="ROSTER" contractStatus="4G-2018" contractYear="2" contractInfo="" salary="6"/>
-<player id="9902" status="ROSTER" contractStatus="5L-2020E" contractYear="35" contractInfo="2016: Extended for three years (originally 3L-2017) to 5L-2020; 2016: advanced $132, 2017-2020 salary = $2 [Advanced:2016:132]" salary="2.00"/>
+<player id="9902" status="ROSTER" contractStatus="5L-2020E" contractYear="35" contractInfo="2016: Extended for three years (originally 3L-2017) to 5L-2020; 2016: advanced $132, 2017-2020 salary = $2 [Advanced:2016:132;Extended:2016:3L-2017]" salary="2.00"/>
 <player id="12680" status="ROSTER" contractStatus="3L-2019" contractYear="1" contractInfo="" salary="1"/>
 <player id="8360" status="ROSTER" contractStatus="3G-2019" contractYear="1" contractInfo="" salary="2"/>
 <player id="9436" status="ROSTER" contractStatus="6L-2018*" contractYear="3" contractInfo="" salary="3.00"/>
@@ -23,10 +23,10 @@
 <player id="9714" status="ROSTER" contractStatus="3G-2018" contractYear="2" contractInfo="" salary="4"/>
 <player id="12142" status="ROSTER" contractStatus="5L-2020" contractYear="1" contractInfo="" salary="1.00"/>
 <player id="12141" status="ROSTER" contractStatus="6L-2020R" contractYear="26" contractInfo="" salary="26"/>
-<player id="11182" status="ROSTER" contractStatus="3L-2019E" contractYear="3" contractInfo="2017: Extended for 2 years" salary="4.00"/>
+<player id="11182" status="ROSTER" contractStatus="3L-2019E" contractYear="3" contractInfo="2017: Extended for 2 years[Extended:2017:2G-2017]" salary="4.00"/>
 <player id="13290" status="ROSTER" contractStatus="5L-2021R" contractYear="2" contractInfo="" salary="2"/>
 <player id="12171" status="ROSTER" contractStatus="4G-2018R" contractYear="10" contractInfo="" salary="15"/>
-<player id="9448" status="ROSTER" contractStatus="3L-2019E" contractYear="28" contractInfo="2017: extended for two years (2018 & 2019 salary = $30)" salary="30"/>
+<player id="9448" status="ROSTER" contractStatus="3L-2019E" contractYear="28" contractInfo="2017: extended for two years (2018 & 2019 salary = $30)[Extended:2017:2G-2017]" salary="30"/>
 <player id="11674" status="ROSTER" contractStatus="6L-2019*R" contractYear="12" contractInfo="" salary="12"/>
 <player id="11676" status="ROSTER" contractStatus="6L-2019*R" contractYear="6" contractInfo="" salary="6.00"/>
 <player id="10903" status="ROSTER" contractStatus="3L-2019" contractYear="3" contractInfo="2017: $4 advanced, 2018-2019 salary = $1 [Advanced:2017:4]" salary="1"/>
@@ -35,7 +35,7 @@
 <player id="13157" status="ROSTER" contractStatus="3L-2019R" contractYear="10" contractInfo="" salary="10"/>
 <player id="13167" status="ROSTER" contractStatus="5L-2021R" contractYear="3" contractInfo="" salary="3"/>
 <player id="13316" status="ROSTER" contractStatus="3G-2019" contractYear="1" contractInfo="" salary="2"/>
-<player id="12391" status="ROSTER" contractStatus="3L-2019E" contractYear="5" contractInfo="2017: Extended for 2 years" salary="6.00"/>
+<player id="12391" status="ROSTER" contractStatus="3L-2019E" contractYear="5" contractInfo="2017: Extended for 2 years[Extended:2017:2G-2017]" salary="6.00"/>
 <player id="13299" status="ROSTER" contractStatus="5L-2021" contractYear="1" contractInfo="" salary="1"/>
 <player id="13193" status="ROSTER" contractStatus="5L-2021R" contractYear="1" contractInfo="" salary="1"/>
 <player id="11904" status="ROSTER" contractStatus="3G-2019" contractYear="1" contractInfo="" salary="2"/>
@@ -45,7 +45,7 @@
 <franchise id="0003">
 <player id="10297" status="ROSTER" contractStatus="3G-2019" contractYear="1" contractInfo="" salary="2"/>
 <player id="13116" status="ROSTER" contractStatus="5L-2021R" contractYear="35" contractInfo="" salary="35.00"/>
-<player id="7391" status="ROSTER" contractStatus="3L-2018E" contractYear="39" contractInfo="2016: Extended from 2G-2016 ($39 initial) to 3L-2018 (2017 & 2018 salary = $41); 2018: $21 to be kept by Aaron in trade [Transferred:2018:21]" salary="20"/>
+<player id="7391" status="ROSTER" contractStatus="3L-2018E" contractYear="39" contractInfo="2016: Extended from 2G-2016 ($39 initial) to 3L-2018 (2017 & 2018 salary = $41); 2018: $21 to be kept by Aaron in trade [Extended:2016:2G-2016;Transferred:2018:21]" salary="20"/>
 <player id="13120" status="ROSTER" contractStatus="5L-2021" contractYear="1" contractInfo="" salary="1"/>
 <player id="12629" status="ROSTER" contractStatus="5L-2020R" contractYear="16" contractInfo="2016: $12 advanced; 2017-2020 salary = $13 [Advanced:2016:12]" salary="13.00"/>
 <player id="13135" status="ROSTER" contractStatus="3L-2019R" contractYear="3" contractInfo="" salary="3.00"/>
@@ -118,7 +118,7 @@
 <player id="11783" status="ROSTER" contractStatus="6G-2019*R" contractYear="3" contractInfo="2017: $4 deferred to 2018 [Deferred:2017:4]" salary="15"/>
 <player id="13168" status="ROSTER" contractStatus="3G-2019R" contractYear="6" contractInfo="" salary="7"/>
 <player id="9884" status="ROSTER" contractStatus="3L-2019" contractYear="12" contractInfo="2017: $4 deferred to 2018 [Deferred:2017:4]" salary="17"/>
-<player id="9925" status="ROSTER" contractStatus="3L-2019E" contractYear="16" contractInfo="2017: Extended 2 years; 2017: $4 deferred; 2017: another $4 deferred [Deferred:2017:4;Deferred:2017:4]" salary="26"/>
+<player id="9925" status="ROSTER" contractStatus="3L-2019E" contractYear="16" contractInfo="2017: Extended 2 years; 2017: $4 deferred; 2017: another $4 deferred [Deferred:2017:4;Deferred:2017:4;Extended:2017:2G-2017]" salary="26"/>
 <player id="12833" status="ROSTER" contractStatus="3G-2019" contractYear="1" contractInfo="" salary="2"/>
 <player id="13156" status="ROSTER" contractStatus="3G-2019R" contractYear="8" contractInfo="" salary="9"/>
 <player id="11654" status="ROSTER" contractStatus="6L-2019*R" contractYear="5" contractInfo="" salary="5.00"/>
@@ -126,7 +126,7 @@
 <player id="12801" status="ROSTER" contractStatus="3G-2018" contractYear="4" contractInfo="2018: HOLDING OUT ($19)" salary="6"/>
 </franchise>
 <franchise id="0007">
-<player id="5848" status="ROSTER" contractStatus="3L-2018E" contractYear="27" contractInfo="2016: Extended @$27 through 2018; 2016: advanced $20, 2017-2018 salary = $17; 2017: $4 deferred; 2018: $5 deferral penalty [Advanced:2016:20;Deferred:2017:4]" salary="22"/>
+<player id="5848" status="ROSTER" contractStatus="3L-2018E" contractYear="27" contractInfo="2016: Extended @$27 through 2018; 2016: advanced $20, 2017-2018 salary = $17; 2017: $4 deferred; 2018: $5 deferral penalty [Advanced:2016:20;Deferred:2017:4;Extended:2016:2G-2016]" salary="22"/>
 <player id="11760" status="ROSTER" contractStatus="6L-2020" contractYear="5" contractInfo="2017: $2 deferred; 2018: $3 deferral penalty [Deferred:2017:2]" salary="8"/>
 <player id="13424" status="ROSTER" contractStatus="3L-2019" contractYear="1" contractInfo="" salary="1"/>
 <player id="11643" status="ROSTER" contractStatus="5L-2020" contractYear="3" contractInfo="" salary="3.00"/>
@@ -152,7 +152,7 @@
 <player id="9817" status="ROSTER" contractStatus="4G-2018" contractYear="2" contractInfo="" salary="6"/>
 <player id="11640" status="ROSTER" contractStatus="6L-2019*R" contractYear="20" contractInfo="2017: $8 deferred; 2018 contract = $30 [Deferred:2017:8]" salary="30"/>
 <player id="10313" status="ROSTER" contractStatus="3G-2018" contractYear="51" contractInfo="" salary="57"/>
-<player id="12155" status="ROSTER" contractStatus="4L-2020E" contractYear="19" contractInfo="2017: Extended for 3 years" salary="21.00"/>
+<player id="12155" status="ROSTER" contractStatus="4L-2020E" contractYear="19" contractInfo="2017: Extended for 3 years[Extended:2017:3G-2017]" salary="21.00"/>
 <player id="13404" status="ROSTER" contractStatus="3G-2019" contractYear="3" contractInfo="2018 (FUTURE DCH): $3 kept by Darren in trade [Transferred:2018:3]" salary="1"/>
 <player id="12151" status="ROSTER" contractStatus="6L-2020R" contractYear="26" contractInfo="" salary="26.00"/>
 <player id="10302" status="ROSTER" contractStatus="3G-2019" contractYear="20" contractInfo="" salary="21"/>
@@ -202,7 +202,7 @@
 <player id="12930" status="ROSTER" contractStatus="3G-2018" contractYear="1" contractInfo="" salary="3"/>
 <player id="11688" status="ROSTER" contractStatus="3G-2018" contractYear="1" contractInfo="" salary="3"/>
 <player id="12175" status="ROSTER" contractStatus="6G-2020R" contractYear="20" contractInfo="" salary="26"/>
-<player id="9427" status="ROSTER" contractStatus="3L-2019E" contractYear="5" contractInfo="2017: Extended 2 years; 2017: Stashed" salary="7.00"/>
+<player id="9427" status="ROSTER" contractStatus="3L-2019E" contractYear="5" contractInfo="2017: Extended 2 years; 2017: Stashed[Extended:2017:3G-2017]" salary="7.00"/>
 <player id="12648" status="ROSTER" contractStatus="4L-2019R" contractYear="19" contractInfo="" salary="19.00"/>
 <player id="10722" status="ROSTER" contractStatus="6L-2018*R" contractYear="5" contractInfo="2013: advance 20; 2014-2018 salary = 1 [Advanced:2013:20]" salary="1.00"/>
 <player id="13176" status="ROSTER" contractStatus="3L-2019R" contractYear="14" contractInfo="" salary="14.00"/>
@@ -239,7 +239,7 @@
 <player id="11152" status="ROSTER" contractStatus="6L-2019*R" contractYear="1" contractInfo="" salary="1.00"/>
 <player id="12612" status="ROSTER" contractStatus="5L-2020R" contractYear="36" contractInfo="" salary="36"/>
 <player id="10702" status="ROSTER" contractStatus="2G-2018" contractYear="1" contractInfo="" salary="2"/>
-<player id="12381" status="ROSTER" contractStatus="2L-2018E" contractYear="28" contractInfo="2017: Extended 1 year" salary="30.00"/>
+<player id="12381" status="ROSTER" contractStatus="2L-2018E" contractYear="28" contractInfo="2017: Extended 1 year[Extended:2017:2G-2017]" salary="30.00"/>
 <player id="11150" status="ROSTER" contractStatus="6L-2018*R" contractYear="17" contractInfo="2013 - Advance $19: 2014 salary = 14, 2015-2018 = 13; 2014: $29 advanced, 2015-17 salary = 6, 2018 salary = 5 [Advanced:2013:19;Advanced:2014:29]" salary="5"/>
 <player id="13115" status="ROSTER" contractStatus="4L-2020R" contractYear="30" contractInfo="2017: $6 advanced, 2018-2020 salary = $28 [Advanced:2017:6]" salary="28"/>
 <player id="12161" status="ROSTER" contractStatus="4L-2018R" contractYear="1" contractInfo="" salary="1.00"/>
