@@ -127,7 +127,6 @@ describe Contract do
     before(:each) do
       @contract.contract_terms = "5L-2021"
       @contract.acquired_cost = 34
-      @contract.salary = 34
     end
 
     describe "#dead_cap" do
@@ -146,6 +145,14 @@ describe Contract do
         notes = "2015: Grandfathered for contract extension; 2015: $27 advanced; 2016-2018 salary = 30, 2019-2020 salary = 29; 2017: 7 kept by Ephraim in trade; 2018: 8 kept by Ephraim in trade; 2019: 9 kept by Ephraim in trade; 2020: 10 kept by Ephraim in trade; 2018 (FUTURE DCH): $5 kept by Darren in trade [Advanced:2015:27;Transferred:2017:7;Transferred:2018:8;Transferred:2019:9;Transferred:2020:10;Transferred:2018:5]"
         @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
         expect(@contract.dead_cap).to eq(27)
+      end
+
+      it "includes entire deferred amount" do
+        contract_terms = "3L-2019"
+        acquired_cost = 16
+        notes = "2017: $4 deferred; 2017: another $4 deferred [Deferred:2017:4;Deferred:2017:4]"
+        @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
+        expect(@contract.dead_cap).to eq(26)
       end
     end
 

@@ -30,9 +30,9 @@ class Contract < ApplicationRecord
   def dead_cap
     return 0 if roster_status == "TAXI_SQUAD"
     if type == "Locked"
-     dead_cap_calc(0.5, 0.5)
+      calc_dead_cap(0.5, 0.5)
     else
-      dead_cap_calc(0.25, 0.1)
+      calc_dead_cap(0.25, 0.1)
     end
   end
 
@@ -45,11 +45,11 @@ class Contract < ApplicationRecord
   end
 
   def holdout_eligible?
-     top_player? && !(rookie_contract? || grandfathered_contract?) && last_year > franchise.league.year
+     top_player? && !(rookie_contract? || grandfathered_contract?) && last_year > league_year
   end
 
   def years_remaining
-    last_year - franchise.league.year
+    last_year - league_year
   end
 
   def type
@@ -74,7 +74,7 @@ class Contract < ApplicationRecord
 
   def top_player?
     thresholds = { QB: 12, RB: 24, WR: 36, TE: 12 }
-    player.holdout_rank(franchise.league.year - 1) <= thresholds[player.position.to_sym]
+    player.holdout_rank(league_year - 1) <= thresholds[player.position.to_sym]
   end
 
   def last_year
@@ -91,13 +91,20 @@ class Contract < ApplicationRecord
 
   private
 
-  def dead_cap_calc(first_year_pct, future_years_pct)
-    salary_hash = salary_schedule
-    league_year = franchise.league.year
+  def calc_dead_cap(first_year_pct, future_years_pct)
+    without_deferrals = Contract.new(self.attributes)
+    without_deferrals.franchise.league = franchise.league
+    without_deferrals.events.delete_if { |e| e.type == "Deferred" }
+    salary_hash = without_deferrals.salary_schedule
     current_year_hit = (salary_hash[league_year]* first_year_pct).ceil
     remaining_term = salary_hash.delete_if {|k,v| k == league_year }
     remaining_hit = (remaining_term.values.sum * future_years_pct).ceil
-    current_year_hit + remaining_hit
+    current_year_hit + remaining_hit + deferred_salary_adjustment
+  end
+
+  def deferred_salary_adjustment 
+    deferral_events = events.select { |e| e.type == "Deferred" && e.adjustment_schedule[league_year] }
+    adjustment = deferral_events.sum { |d| (d.amount * 1.25).ceil } 
   end
 
   def parse_notes
@@ -117,7 +124,12 @@ class Contract < ApplicationRecord
   end
 
   def trim_years(schedule)
-    schedule.delete_if {|k,v| k < franchise.league.year || k > last_year }
+    schedule.delete_if {|k,v| k < league_year || k > last_year }
     schedule
   end
+
+  def league_year
+    franchise.league.year
+  end
 end
+
