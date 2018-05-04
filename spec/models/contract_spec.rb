@@ -194,23 +194,11 @@ describe Contract do
     before(:each) do
       @contract.contract_terms = "5G-2021"
       @contract.acquired_cost = 32
-      @contract.salary =  34
     end
 
     describe "#guaranteed?" do
       it "returns true" do
         expect(@contract.guaranteed?).to be true
-      end
-    end
-
-    describe "#dead_cap" do
-      it "calculates dead cap correctly" do
-        expect(@contract.dead_cap).to eq(21)
-      end
-
-      it "returns zero if the player is on the taxi squad" do
-        @contract.roster_status = "TAXI_SQUAD"
-        expect(@contract.dead_cap).to eq(0)
       end
     end
 

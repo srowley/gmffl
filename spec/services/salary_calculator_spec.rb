@@ -146,7 +146,7 @@ describe SalaryCalculator do
         contract_terms = "4G-2018"
         acquired_cost = "2"
         @contract = Contract.create(franchise: @franchise, player: @player, acquired_cost: acquired_cost, contract_terms: contract_terms)
-        expect(SalaryCalculator.new(@contract).call).to eq({ 2015 => 2, 2016 => 3, 2017 => 4, 2018 => 5})
+        expect(SalaryCalculator.new(@contract).call).to eq({ 2015 => 2, 2016 => 4, 2017 => 5, 2018 => 6})
       end
     end
   end
