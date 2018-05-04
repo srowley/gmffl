@@ -24,7 +24,7 @@ class SalaryCalculator
         schedule[year + 1] = (schedule[year].to_i * 1.05).ceil
       end
     else
-      schedue = { contract.start_year => contract.acquired_cost }
+      schedule = { contract.start_year => contract.acquired_cost }
       (contract.start_year..contract.last_year).each do |y|
         schedule[y] = contract.acquired_cost
       end

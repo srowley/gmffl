@@ -94,6 +94,8 @@ class Contract < ApplicationRecord
   def calc_dead_cap(first_year_pct, future_years_pct)
     without_deferrals = Contract.new(self.attributes)
     without_deferrals.franchise.league = franchise.league
+    # I don't understand why the line below is necessary
+    without_deferrals = without_deferrals.extension.extended_contract if without_deferrals.extended?
     without_deferrals.events.delete_if { |e| e.type == "Deferred" }
     salary_hash = without_deferrals.salary_schedule
     current_year_hit = (salary_hash[league_year]* first_year_pct).ceil

@@ -154,6 +154,14 @@ describe Contract do
         @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
         expect(@contract.dead_cap).to eq(26)
       end
+
+      it "includes entire deferred amount when there was an extension" do
+        contract_terms = "3L-2019E"
+        acquired_cost = 15
+        notes = "2017: Extended 2 years; 2017: $4 deferred; 2017: another $4 deferred [Deferred:2017:4;Deferred:2017:4;Extended:2017:2G-2017]"
+        @contract = Contract.create(franchise: @franchise, player: @player, notes: notes, acquired_cost: acquired_cost, contract_terms: contract_terms)
+        expect(@contract.dead_cap).to eq(26)
+      end
     end
 
     describe "#type" do
